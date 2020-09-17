@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Mybatis常见面试题 | Hexo</title>
+  <title>JAVA集合浅析 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+  <meta name="description" content="JAVA集合浅析 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mybatis常见面试题">
-<meta property="og:url" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:title" content="JAVA集合浅析">
+<meta property="og:url" content="http://example.com/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+<meta property="og:description" content="JAVA集合浅析 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
-<meta property="article:published_time" content="2020-03-24T04:34:16.000Z">
-<meta property="article:modified_time" content="2020-03-24T08:51:40.846Z">
+<meta property="og:image" content="http://example.com/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
+<meta property="article:published_time" content="2020-03-23T08:27:43.000Z">
+<meta property="article:modified_time" content="2020-07-15T10:46:30.794Z">
 <meta property="article:author" content="Du Peng">
 <meta property="article:tag" content="面试题">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
+<meta name="twitter:image" content="http://example.com/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,14 +188,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Mybatis常见面试题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JAVA集合浅析" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Mybatis常见面试题
+      JAVA集合浅析
     </h1>
   
 
@@ -207,8 +207,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-        <time datetime="2020-03-24T04:34:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+<a href="/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/" class="archive-article-date">
+        <time datetime="2020-03-23T08:27:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-23</time>
 </a>
 
   
@@ -221,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">986字</span>
+      <span class="post-count">965字</span>
     </span>
   </span>
 
@@ -241,45 +241,116 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a><center>Mybatis</center></h3><h4 id="什么是Mybatis？"><a href="#什么是Mybatis？" class="headerlink" title="什么是Mybatis？"></a>什么是Mybatis？</h4><p>Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。</p>
-<h4 id="Mybatis与Hibernate的区别？"><a href="#Mybatis与Hibernate的区别？" class="headerlink" title="Mybatis与Hibernate的区别？"></a>Mybatis与Hibernate的区别？</h4><p>Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易</p>
-<p>Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目，上手难度较大</p>
+    <h2 id="JAVA集合浅析"><a href="#JAVA集合浅析" class="headerlink" title=" JAVA集合浅析"></a><center> JAVA集合浅析</center></h2><blockquote>
+<p>List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口</p>
+<p>List下有ArrayList，Vector，LinkedList</p>
+<p>Map下有Hsahtable，LinkedMap，HashMap，TreeMap</p>
+<p>Set下有HashSet，LinkedSet，TreeSet</p>
+</blockquote>
 <a id="more"></a>
 
-<h4 id="Mybatis-和-有什么区别？"><a href="#Mybatis-和-有什么区别？" class="headerlink" title="Mybatis  #{} 和 ${}有什么区别？"></a>Mybatis  #{} 和 ${}有什么区别？</h4><p><strong>1.</strong>#{}: 表示的是一个占位符，是预编译处理，在处理#{}的时候会将sql中的#{}替换为 ？</p>
-<p>   ${}:表示的是拼接符，是字符串替换，就是把${}替换为变量值</p>
-<p>**2.**使用#{}可以防止sql注入，提高系统的安全性</p>
-<p>#{}将传入的数据都当成字符串，会对自动传入的数据加上一个双引号</p>
-<p>${}将传入的数据直接展示sql中</p>
-<p>所以尽量使用#{}</p>
-<h4 id="Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？"><a href="#Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？" class="headerlink" title="Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？"></a>Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？</h4><ol>
-<li>Mppper.xml文件中的nameSpace要和接口中的全路径名一样</li>
-<li>Mapper接口的方法名要和Mapper.xml中的定义的每个statement的Id一样</li>
-<li>Mapper接口方法的参数要和Mapper.xml中定义每个Sql的parameterType的类型一致</li>
-<li>Mapper接口方法的返回值要和Mapper.xml中定义的每个Sql的resultType类型一致</li>
-</ol>
-<h4 id="Mybatis的优缺点"><a href="#Mybatis的优缺点" class="headerlink" title="Mybatis的优缺点"></a>Mybatis的优缺点</h4><p><strong>优点</strong></p>
-<ol>
-<li>基于sql编程相当灵活，sql写在xml中，降低耦合性</li>
-<li>与JDBC相比，减少了50%的代码，消除大量冗余代码，不需要手动打开连接</li>
-<li>很好的与Spring集成，与各种数据库兼容</li>
-</ol>
-<p><strong>缺点</strong></p>
-<ol>
-<li>sql语句的编写工程量大，尤其是字段多，关联表多的时候，对开发人员SQL语句功底有一定要求</li>
-<li>Sql语句依赖数据库，导致数据库移植性差，不能随意更换数据库表</li>
-</ol>
-<h4 id="简单概括Mybatis的工作原理："><a href="#简单概括Mybatis的工作原理：" class="headerlink" title="简单概括Mybatis的工作原理："></a>简单概括Mybatis的工作原理：</h4><p><img src="Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png"></p>
-<p>1.首先加载Mybatis的配置文件（数据源，mapper映射文件等），解析配置文件。Mybatis基于配置文件生成Configuration，和一个个Statement（包括了参数映射配置，动态sql语句，结果映射配置），其对应着&lt;select | update | delete | insert&gt;标签项。</p>
-<p>2.SqlSessionFactoryBuilder通过configuration生成SqlSesssionFactory，用来开启SqlSession</p>
-<p>3.SqlSession完成数据库的交互</p>
-<p>说明：Sqlsession是单线程对象，是非线程安全的，是持久化操作的独享对象，底层就封装了Jdbc的连接</p>
-<h4 id="Mybatis的一级缓存和二级缓存？"><a href="#Mybatis的一级缓存和二级缓存？" class="headerlink" title="Mybatis的一级缓存和二级缓存？"></a>Mybatis的一级缓存和二级缓存？</h4><p>缓存：合理使用缓存是优化中最常见的方法之一，将数据库查出来的数据放入缓存中，下次使用的时候不用从数据库中查询，而是直接从缓存中读取，避免频繁操作数据库，减轻数据库的压力。</p>
-<p>1.一级缓存是指SqlSession，一级缓存的作用就是在SQLSession中，默认开启一级缓存。在同一个SqlSession，执行相同的Sql的时候，第一次去数据库查询并写在缓存中，第二次执行相同的Sql的时候就会直接去缓存中取。当执行的Sql的两次查询的中间发生了增删改的操作，则SqlSession会被清空。之后每次查询就会去缓存中找，找不到就去数据库查，并把结果写进缓存。</p>
-<p>Mybatis内部缓存是使用的HashMap，key是hashcode+statemenId+sql语句，value就是查询出来的结果集映射成的对象。Sqlsession执行增删改的操作commit后会清空SqlSession缓存。</p>
-<p>2.二级缓存就是Mapper级别的缓存。Mybatis没有默认开启二级缓存，同一个namespace下的所有操作语句，都影响着同一个Cache，即二级缓存被多个SqlSession共享，是一个全局的变量。</p>
-<p>建议使用第三方缓存，比如redis。</p>
 
+
+<p><img src="%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg"></p>
+<h3 id="List-是有序的，可重复的"><a href="#List-是有序的，可重复的" class="headerlink" title="List      是有序的，可重复的"></a>List      是有序的，可重复的</h3><ul>
+<li><p><strong>ArrayList</strong></p>
+<blockquote>
+<p>优点：底层是数组，查询快，增删慢</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程不安全，效率快</p>
+</blockquote>
+<p><strong>底层源码分析：</strong></p>
+<p><strong>JDK7的情况下：</strong></p>
+<blockquote>
+<p>new ArrayList(); 底层创建了一个长度为10的数组，如果一直添加，导致数组的容量不够，就会扩容，扩容为原来的1.5倍，同时将原有的数组复制到新的数组中</p>
+</blockquote>
+<blockquote>
+<p>结论：建议使用带参的构造器 new ArrayList(50);，一开始就创建了指定的长度，避免了中间扩容</p>
+</blockquote>
+<p><strong><em>JDK8</em>中的变化</strong></p>
+<blockquote>
+<p>在new ArrayList的时候并没有创建长度为10的数组，只创建了一个空的数组</p>
+<p>在第一次add()的时候，才创建了长度为10的数组</p>
+<p>后续和JDK7 中的一样</p>
+</blockquote>
+<blockquote>
+<p>小结：ArrayList在jdk中类似单例的饿汗式。在JDK8中就类似单例的懒汉式，延迟了加载</p>
+</blockquote>
+</li>
+<li><p><strong>Vector 最古老的一个数组，JDK1中就有</strong></p>
+<blockquote>
+<p>优点：底层也是使用数组实现的，查询快，增删慢</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程安全但是效率低</p>
+</blockquote>
+</li>
+<li><p><strong>LinkedList</strong></p>
+<blockquote>
+<p>优点：底层是双向链表结构实现的，查询慢，对于频繁的增删快</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程不安全，但是效率高</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Set-是无序的，是唯一的-使用最少的"><a href="#Set-是无序的，是唯一的-使用最少的" class="headerlink" title="Set    是无序的，是唯一的(使用最少的)"></a>Set    是无序的，是唯一的(使用最少的)</h3><ul>
+<li><p><strong>HashSet(无序的，唯一的)</strong></p>
+<blockquote>
+<p>底层结构是哈希表</p>
+</blockquote>
+<blockquote>
+<p>怎么保证元素的唯一性？ 依赖两个方法 HashCode()和equls</p>
+</blockquote>
+</li>
+<li><p><strong>LInkedHashSet（有序的，唯一的）</strong></p>
+<blockquote>
+<p>底层结构是链表和哈希表</p>
+<p>链表保证元素的唯一性，哈希保证元素的唯一</p>
+</blockquote>
+</li>
+<li><p><strong>TreeSet（唯一的，有序的）</strong></p>
+<blockquote>
+<p>底层是红黑树（暂时对红黑树的认知很少）</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="Map-存储-k-v对的数据，底层是数组加链表进行存储的"><a href="#Map-存储-k-v对的数据，底层是数组加链表进行存储的" class="headerlink" title="Map     存储 k-v对的数据，底层是数组加链表进行存储的"></a>Map     存储 k-v对的数据，底层是数组加链表进行存储的</h2><blockquote>
+<p>HashMap是map的主要实现类，线程是不安全的，但是效率高，但是不能存储null值的k和v</p>
+</blockquote>
+<blockquote>
+<p>Hashtable是古老的实现类，线程是安全的，但是效率低，可以存储null值的k和v</p>
+</blockquote>
+<p><strong><em>HashMap</em>的底层原理：(高频面试题)</strong></p>
+<p><strong>JDK7中：</strong></p>
+<blockquote>
+<p>HashMap map = new HashMap的时候，底层就会创建一个长度为16的数组</p>
+</blockquote>
+<p><strong>在map.put(k1,v1)时</strong></p>
+<blockquote>
+<p>情况一：*首先先计算k1所在类Hashcode()方法计算哈希值，就会得到k1-v1的存放位置，如果这个位置上没有数据，k1-v1就会添加成功，</p>
+<p>如果在这个位置上有数据，就意味着（在这个位置上有一个或者多个数据，是以链表的方式存在的）</p>
+</blockquote>
+<blockquote>
+<p>情况二：*如果k1的哈希值和其余的数据的哈希值不一样，此时k1-v1就会添加成功</p>
+</blockquote>
+<blockquote>
+<p>情况三：*如果k1的哈希值和其余的数据的哈希值一样，此时就会调用equls方法，如果返回的是false,则添加成功</p>
+<p>如果返回的是true，则用k1的vule值替换掉原来的值</p>
+</blockquote>
+<p>关于扩容问题：在不断的添加过程中，默认的扩容方式是将原来的容量扩大2倍，并将原来的值复制过来。</p>
+<p><strong>JDK7和JDK8中的不同：</strong></p>
+<blockquote>
+<p>JDK8中，在new HashMap()的时候并没有创建一个长度为16的数组，而是在进行第一次put的时候才创建了一个长度为16的数组。</p>
+<p>在JDK8中底层是使用  数组加链表加红黑树进行存储的</p>
+</blockquote>
+<blockquote>
+<p>什么时候用到红黑树呢？当在数组的一个索引位置上的以链表的形式存在的数据超过8个了，而且当数组的长度超过64了，此时索引位置上的所有数据改为红黑树存储。</p>
+</blockquote>
+<center></center>
+
+<h3 id="有不对的地方欢迎在评论处指正"><a href="#有不对的地方欢迎在评论处指正" class="headerlink" title="有不对的地方欢迎在评论处指正"></a><center>有不对的地方欢迎在评论处指正</center></h3>
     
 
     
@@ -325,7 +396,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/2020/03/24/Mybatis常见面试题/" title="Mybatis常见面试题" target="_blank">http://example.com/2020/03/24/Mybatis常见面试题/</a>
+          <a href="http://example.com/2020/03/23/JAVA集合浅析/" title="JAVA集合浅析" target="_blank">http://example.com/2020/03/23/JAVA集合浅析/</a>
         </li>
         
         <li>
@@ -340,6 +411,11 @@
 
   </div>
   <div class="article-info article-info-index">
+    
+    <div class="article-pop-out tagcloud">
+      <i class="icon-tuding"></i>
+      <a class="article-tag-list-link color3">置顶</a>
+    </div>
     
     
 	<div class="article-tag tagcloud">
@@ -414,7 +490,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -429,20 +505,15 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/03/24/SpringMVC/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          SpringMVC
+          Mybatis常见面试题
         
       </div>
     </a>
   
-  
-    <a href="/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JAVA集合浅析</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -478,9 +549,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "Mybatis常见面试题" -->
+  <!-- id: "JAVA集合浅析" -->
   var giteement = new Giteement({
-    id: '20200324123416',
+    id: '20200323162743',
     owner: 'dupeng98',
     repo: 'dupeng98',
     backcall_uri: 'https://dupeng98.gitee.io/',

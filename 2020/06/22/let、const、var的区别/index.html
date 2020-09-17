@@ -6,24 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Mybatis常见面试题 | Hexo</title>
+  <title>let、const、var的区别 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+  <meta name="description" content="什么时候提出的？var是ES5中提出的，let、const是ES6中提出的 是否存在变量提升？  var声明的变量存在变量提升(将变量提升到当前作用域的顶部)，即变量可以在声明之前调用，值为undefined。 let和const不存在变量提升。即它们所声明的变量一定要在声明后使用，否则报ReferenceError错">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mybatis常见面试题">
-<meta property="og:url" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:title" content="let、const、var的区别">
+<meta property="og:url" content="http://example.com/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+<meta property="og:description" content="什么时候提出的？var是ES5中提出的，let、const是ES6中提出的 是否存在变量提升？  var声明的变量存在变量提升(将变量提升到当前作用域的顶部)，即变量可以在声明之前调用，值为undefined。 let和const不存在变量提升。即它们所声明的变量一定要在声明后使用，否则报ReferenceError错">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
-<meta property="article:published_time" content="2020-03-24T04:34:16.000Z">
-<meta property="article:modified_time" content="2020-03-24T08:51:40.846Z">
+<meta property="article:published_time" content="2020-06-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-09-17T06:45:12.311Z">
 <meta property="article:author" content="Du Peng">
-<meta property="article:tag" content="面试题">
+<meta property="article:tag" content="ES6">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,14 +186,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Mybatis常见面试题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-let、const、var的区别" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Mybatis常见面试题
+      let、const、var的区别
     </h1>
   
 
@@ -207,8 +205,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-        <time datetime="2020-03-24T04:34:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+<a href="/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/" class="archive-article-date">
+        <time datetime="2020-06-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-22</time>
 </a>
 
   
@@ -221,7 +219,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">986字</span>
+      <span class="post-count">959字</span>
     </span>
   </span>
 
@@ -241,44 +239,53 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a><center>Mybatis</center></h3><h4 id="什么是Mybatis？"><a href="#什么是Mybatis？" class="headerlink" title="什么是Mybatis？"></a>什么是Mybatis？</h4><p>Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。</p>
-<h4 id="Mybatis与Hibernate的区别？"><a href="#Mybatis与Hibernate的区别？" class="headerlink" title="Mybatis与Hibernate的区别？"></a>Mybatis与Hibernate的区别？</h4><p>Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易</p>
-<p>Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目，上手难度较大</p>
+    <h5 id="什么时候提出的？"><a href="#什么时候提出的？" class="headerlink" title="什么时候提出的？"></a>什么时候提出的？</h5><p>var是ES5中提出的，let、const是ES6中提出的</p>
+<p><strong>是否存在变量提升？</strong></p>
+<blockquote>
+<p>var声明的变量存在变量提升(将变量提升到当前作用域的顶部)，即变量可以在声明之前调用，值为undefined。</p>
+<p>let和const不存在变量提升。即它们所声明的变量一定要在声明后使用，否则报ReferenceError错</p>
+</blockquote>
 <a id="more"></a>
 
-<h4 id="Mybatis-和-有什么区别？"><a href="#Mybatis-和-有什么区别？" class="headerlink" title="Mybatis  #{} 和 ${}有什么区别？"></a>Mybatis  #{} 和 ${}有什么区别？</h4><p><strong>1.</strong>#{}: 表示的是一个占位符，是预编译处理，在处理#{}的时候会将sql中的#{}替换为 ？</p>
-<p>   ${}:表示的是拼接符，是字符串替换，就是把${}替换为变量值</p>
-<p>**2.**使用#{}可以防止sql注入，提高系统的安全性</p>
-<p>#{}将传入的数据都当成字符串，会对自动传入的数据加上一个双引号</p>
-<p>${}将传入的数据直接展示sql中</p>
-<p>所以尽量使用#{}</p>
-<h4 id="Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？"><a href="#Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？" class="headerlink" title="Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？"></a>Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？</h4><ol>
-<li>Mppper.xml文件中的nameSpace要和接口中的全路径名一样</li>
-<li>Mapper接口的方法名要和Mapper.xml中的定义的每个statement的Id一样</li>
-<li>Mapper接口方法的参数要和Mapper.xml中定义每个Sql的parameterType的类型一致</li>
-<li>Mapper接口方法的返回值要和Mapper.xml中定义的每个Sql的resultType类型一致</li>
-</ol>
-<h4 id="Mybatis的优缺点"><a href="#Mybatis的优缺点" class="headerlink" title="Mybatis的优缺点"></a>Mybatis的优缺点</h4><p><strong>优点</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(f) <span class="comment">//undefined</span></span><br><span class="line"><span class="keyword">var</span> f = <span class="number">1</span> ;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(g) <span class="comment">//ReferenceError: g is not defined</span></span><br><span class="line"><span class="keyword">let</span> g = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(h) <span class="comment">//ReferenceError: g is not defined</span></span><br><span class="line"><span class="keyword">const</span> h = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>是否允许重复声明变量？</strong></p>
+<blockquote>
+<p>var允许重复声明变量。let和const在同一作用域不允许重复声明变量。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">var</span> f = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">5</span>) <span class="comment">//5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> g = <span class="number">6</span>;</span><br><span class="line"><span class="keyword">let</span> g = <span class="number">7</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">7</span>) <span class="comment">//SyntaxError: Identifier &#x27;g&#x27; has already been declared</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> h = <span class="number">8</span>;</span><br><span class="line"><span class="keyword">const</span> h = <span class="number">9</span>;</span><br><span class="line"><span class="built_in">console</span>.log(h) <span class="comment">//SyntaxError: Identifier &#x27;g&#x27; has already been declared</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>是否能修改声明的变量？</strong></p>
+<blockquote>
+<p>var和let可以。const声明一个只读的常量。一旦声明，常量的值就不能改变。const声明的变量不得改变值，这意味着，const一旦声明变量，就必须立即初始化，不能留到以后赋值。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> f = <span class="number">10</span>;</span><br><span class="line"><span class="comment">// f= 11;</span></span><br><span class="line"><span class="comment">// console.log(f) //报错 不能进行重复声明</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">    name: <span class="string">&#x27;小二&#x27;</span>,</span><br><span class="line">    age: <span class="number">18</span></span><br><span class="line">&#125;</span><br><span class="line">obj.age = <span class="number">20</span></span><br><span class="line"><span class="built_in">console</span>.log(obj) <span class="comment">//&#123; name: &#x27;小明&#x27;, age: 20 &#125;  </span></span><br></pre></td></tr></table></figure>
+
+<h5 id="const定义的对象属性是否可以改变"><a href="#const定义的对象属性是否可以改变" class="headerlink" title="const定义的对象属性是否可以改变"></a>const定义的对象属性是否可以改变</h5><p>上面说到 const 是不能修改的，但是回来实际测试后发现错了，</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">    name : <span class="string">&#x27;jiuke&#x27;</span>,</span><br><span class="line">    sex : <span class="string">&#x27;男&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">person.name = <span class="string">&#x27;test&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.name)</span><br></pre></td></tr></table></figure>
+
+<p>运行上述代码，发现person对象的name属性确实被修改了，</p>
+<p>因为对象是引用类型的，person中保存的仅是对象的指针，这就意味着，const仅保证指针不发生改变，修改对象的属性不会改变对象的指针，所以是被允许的。也就是说const定义的引用类型只要指针不发生改变，其他的不论如何改变都是允许的。</p>
+<p>然后试着修改一下指针，让person指向一个新对象，果然报错</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">   name : <span class="string">&#x27;jiuke&#x27;</span>,</span><br><span class="line">   sex : <span class="string">&#x27;男&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">person = &#123;</span><br><span class="line">   name : <span class="string">&#x27;test&#x27;</span>,</span><br><span class="line">   sex : <span class="string">&#x27;男&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>是否存在暂时性死区？**</strong></p>
+<p>let和const存在暂时性死区。即只要块级作用域内存在let命令，它所声明的变量就“绑定”（binding）这个区域，不再受外部的影响。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tmp = <span class="number">123</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  tmp = <span class="string">&#x27;abc&#x27;</span>; <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">let</span> tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//以上代码if后面&#123;&#125;形成了块级作用域，由于使用let声明了tmp，则这个变量就绑定了块区域，在声明之前使用，会报错。</span></span><br></pre></td></tr></table></figure>
+
+<p>在代码块内，使用let命令声明变量之前，该变量都是不可用的。这在语法上，称为“暂时性死区”（temporal dead zone，简称 TDZ）。</p>
+<p><strong>是否存在块级作用域？</strong></p>
 <ol>
-<li>基于sql编程相当灵活，sql写在xml中，降低耦合性</li>
-<li>与JDBC相比，减少了50%的代码，消除大量冗余代码，不需要手动打开连接</li>
-<li>很好的与Spring集成，与各种数据库兼容</li>
+<li>var定义的变量，没有块的概念，可以跨块访问, 不能跨函数访问。</li>
+<li>let定义的变量，只能在块作用域里访问，不能跨块访问，也不能跨函数访问</li>
+<li>const用来定义常量，使用时必须初始化(即必须赋值)，只能在块作用域里访问，而且不能修改。</li>
 </ol>
-<p><strong>缺点</strong></p>
-<ol>
-<li>sql语句的编写工程量大，尤其是字段多，关联表多的时候，对开发人员SQL语句功底有一定要求</li>
-<li>Sql语句依赖数据库，导致数据库移植性差，不能随意更换数据库表</li>
-</ol>
-<h4 id="简单概括Mybatis的工作原理："><a href="#简单概括Mybatis的工作原理：" class="headerlink" title="简单概括Mybatis的工作原理："></a>简单概括Mybatis的工作原理：</h4><p><img src="Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png"></p>
-<p>1.首先加载Mybatis的配置文件（数据源，mapper映射文件等），解析配置文件。Mybatis基于配置文件生成Configuration，和一个个Statement（包括了参数映射配置，动态sql语句，结果映射配置），其对应着&lt;select | update | delete | insert&gt;标签项。</p>
-<p>2.SqlSessionFactoryBuilder通过configuration生成SqlSesssionFactory，用来开启SqlSession</p>
-<p>3.SqlSession完成数据库的交互</p>
-<p>说明：Sqlsession是单线程对象，是非线程安全的，是持久化操作的独享对象，底层就封装了Jdbc的连接</p>
-<h4 id="Mybatis的一级缓存和二级缓存？"><a href="#Mybatis的一级缓存和二级缓存？" class="headerlink" title="Mybatis的一级缓存和二级缓存？"></a>Mybatis的一级缓存和二级缓存？</h4><p>缓存：合理使用缓存是优化中最常见的方法之一，将数据库查出来的数据放入缓存中，下次使用的时候不用从数据库中查询，而是直接从缓存中读取，避免频繁操作数据库，减轻数据库的压力。</p>
-<p>1.一级缓存是指SqlSession，一级缓存的作用就是在SQLSession中，默认开启一级缓存。在同一个SqlSession，执行相同的Sql的时候，第一次去数据库查询并写在缓存中，第二次执行相同的Sql的时候就会直接去缓存中取。当执行的Sql的两次查询的中间发生了增删改的操作，则SqlSession会被清空。之后每次查询就会去缓存中找，找不到就去数据库查，并把结果写进缓存。</p>
-<p>Mybatis内部缓存是使用的HashMap，key是hashcode+statemenId+sql语句，value就是查询出来的结果集映射成的对象。Sqlsession执行增删改的操作commit后会清空SqlSession缓存。</p>
-<p>2.二级缓存就是Mapper级别的缓存。Mybatis没有默认开启二级缓存，同一个namespace下的所有操作语句，都影响着同一个Cache，即二级缓存被多个SqlSession共享，是一个全局的变量。</p>
-<p>建议使用第三方缓存，比如redis。</p>
+<p>​    块作用域由 { } 包括，if语句和 for语句里面的{ }也属于块作用域。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line">    <span class="comment">// 通过var定义的变量可以跨块作用域访问到。</span></span><br><span class="line">    (<span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line">    &#125;)();</span><br><span class="line">    <span class="comment">// console.log(b); // 报错，</span></span><br><span class="line">    <span class="comment">// 可见，通过var定义的变量不能跨函数作用域访问到</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> <span class="comment">// 块作用域</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">let</span> b = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">const</span> c = <span class="number">3</span>;</span><br><span class="line">        <span class="comment">// c = 4; // 报错</span></span><br><span class="line">        <span class="keyword">var</span> aa;</span><br><span class="line">        <span class="keyword">let</span> bb;</span><br><span class="line">        <span class="comment">// const cc; // 报错</span></span><br><span class="line">        <span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line">        <span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line">        <span class="built_in">console</span>.log(c); <span class="comment">// 3</span></span><br><span class="line">        <span class="built_in">console</span>.log(aa); <span class="comment">// undefined</span></span><br><span class="line">        <span class="built_in">console</span>.log(bb); <span class="comment">// undefined</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br><span class="line">    <span class="comment">// console.log(b); // 报错</span></span><br><span class="line">    <span class="comment">// console.log(c); // 报错</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
 
     
 
@@ -325,7 +332,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/2020/03/24/Mybatis常见面试题/" title="Mybatis常见面试题" target="_blank">http://example.com/2020/03/24/Mybatis常见面试题/</a>
+          <a href="http://example.com/2020/06/22/let、const、var的区别/" title="let、const、var的区别" target="_blank">http://example.com/2020/06/22/let、const、var的区别/</a>
         </li>
         
         <li>
@@ -347,7 +354,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
         		</li>
       		
 		</ul>
@@ -359,7 +366,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -414,7 +421,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -429,18 +436,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/03/24/SpringMVC/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/06/24/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          SpringMVC
+          Vue的生命周期
         
       </div>
     </a>
   
   
-    <a href="/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JAVA集合浅析</div>
+    <a href="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vue+Element实现动态生成新表单加校验</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -478,9 +485,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "Mybatis常见面试题" -->
+  <!-- id: "let、const、var的区别" -->
   var giteement = new Giteement({
-    id: '20200324123416',
+    id: '20200622000000',
     owner: 'dupeng98',
     repo: 'dupeng98',
     backcall_uri: 'https://dupeng98.gitee.io/',

@@ -6,24 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Mybatis常见面试题 | Hexo</title>
+  <title>Docker安装Mysql &amp; Redis | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+  <meta name="description" content="Docker安装Mysql &amp; Redis下载 mysql 镜像 1docker pull mysql:5.7   :后是指定的具体哪个版本  容器文件挂载与端口映射并启动 123456docker run -p 3306:3306 --name mysql \-v &#x2F;mydata&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql \-v &#x2F;mydata&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mybatis常见面试题">
-<meta property="og:url" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:title" content="Docker安装Mysql &amp; Redis">
+<meta property="og:url" content="http://example.com/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+<meta property="og:description" content="Docker安装Mysql &amp; Redis下载 mysql 镜像 1docker pull mysql:5.7   :后是指定的具体哪个版本  容器文件挂载与端口映射并启动 123456docker run -p 3306:3306 --name mysql \-v &#x2F;mydata&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql \-v &#x2F;mydata&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;l">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
-<meta property="article:published_time" content="2020-03-24T04:34:16.000Z">
-<meta property="article:modified_time" content="2020-03-24T08:51:40.846Z">
+<meta property="article:published_time" content="2020-07-13T14:49:04.000Z">
+<meta property="article:modified_time" content="2020-09-17T06:33:54.794Z">
 <meta property="article:author" content="Du Peng">
-<meta property="article:tag" content="面试题">
+<meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,14 +186,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Mybatis常见面试题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Docker安装Mysql &amp; Redis" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Mybatis常见面试题
+      Docker安装Mysql &amp; Redis
     </h1>
   
 
@@ -207,8 +205,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-        <time datetime="2020-03-24T04:34:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+<a href="/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/" class="archive-article-date">
+        <time datetime="2020-07-13T14:49:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-13</time>
 </a>
 
   
@@ -221,7 +219,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">986字</span>
+      <span class="post-count">281字</span>
     </span>
   </span>
 
@@ -230,7 +228,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">3分</span>
+      <span class="post-count">1分</span>
     </span>
   </span>
 </div>
@@ -241,44 +239,46 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a><center>Mybatis</center></h3><h4 id="什么是Mybatis？"><a href="#什么是Mybatis？" class="headerlink" title="什么是Mybatis？"></a>什么是Mybatis？</h4><p>Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。</p>
-<h4 id="Mybatis与Hibernate的区别？"><a href="#Mybatis与Hibernate的区别？" class="headerlink" title="Mybatis与Hibernate的区别？"></a>Mybatis与Hibernate的区别？</h4><p>Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易</p>
-<p>Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目，上手难度较大</p>
+    <h2 id="Docker安装Mysql-amp-Redis"><a href="#Docker安装Mysql-amp-Redis" class="headerlink" title="Docker安装Mysql &amp; Redis"></a><center>Docker安装Mysql &amp; Redis</center></h2><p>下载 mysql 镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull mysql:5.7   :后是指定的具体哪个版本</span><br></pre></td></tr></table></figure>
+
+<p>容器文件挂载与端口映射并启动</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="keyword">run</span><span class="bash"> -p 3306:3306 --name mysql \</span></span><br><span class="line"><span class="bash">-v /mydata/mysql/<span class="built_in">log</span>:/var/<span class="built_in">log</span>/mysql \</span></span><br><span class="line"><span class="bash">-v /mydata/mysql/data:/var/lib/mysql \</span></span><br><span class="line"><span class="bash">-v /mydata/mysql/conf:/etc/mysql \</span></span><br><span class="line"><span class="bash">-e MYSQL_ROOT_PASSWORD=root \</span></span><br><span class="line"><span class="bash">-d mysql:5.7</span></span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<h4 id="Mybatis-和-有什么区别？"><a href="#Mybatis-和-有什么区别？" class="headerlink" title="Mybatis  #{} 和 ${}有什么区别？"></a>Mybatis  #{} 和 ${}有什么区别？</h4><p><strong>1.</strong>#{}: 表示的是一个占位符，是预编译处理，在处理#{}的时候会将sql中的#{}替换为 ？</p>
-<p>   ${}:表示的是拼接符，是字符串替换，就是把${}替换为变量值</p>
-<p>**2.**使用#{}可以防止sql注入，提高系统的安全性</p>
-<p>#{}将传入的数据都当成字符串，会对自动传入的数据加上一个双引号</p>
-<p>${}将传入的数据直接展示sql中</p>
-<p>所以尽量使用#{}</p>
-<h4 id="Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？"><a href="#Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？" class="headerlink" title="Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？"></a>Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？</h4><ol>
-<li>Mppper.xml文件中的nameSpace要和接口中的全路径名一样</li>
-<li>Mapper接口的方法名要和Mapper.xml中的定义的每个statement的Id一样</li>
-<li>Mapper接口方法的参数要和Mapper.xml中定义每个Sql的parameterType的类型一致</li>
-<li>Mapper接口方法的返回值要和Mapper.xml中定义的每个Sql的resultType类型一致</li>
-</ol>
-<h4 id="Mybatis的优缺点"><a href="#Mybatis的优缺点" class="headerlink" title="Mybatis的优缺点"></a>Mybatis的优缺点</h4><p><strong>优点</strong></p>
-<ol>
-<li>基于sql编程相当灵活，sql写在xml中，降低耦合性</li>
-<li>与JDBC相比，减少了50%的代码，消除大量冗余代码，不需要手动打开连接</li>
-<li>很好的与Spring集成，与各种数据库兼容</li>
-</ol>
-<p><strong>缺点</strong></p>
-<ol>
-<li>sql语句的编写工程量大，尤其是字段多，关联表多的时候，对开发人员SQL语句功底有一定要求</li>
-<li>Sql语句依赖数据库，导致数据库移植性差，不能随意更换数据库表</li>
-</ol>
-<h4 id="简单概括Mybatis的工作原理："><a href="#简单概括Mybatis的工作原理：" class="headerlink" title="简单概括Mybatis的工作原理："></a>简单概括Mybatis的工作原理：</h4><p><img src="Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png"></p>
-<p>1.首先加载Mybatis的配置文件（数据源，mapper映射文件等），解析配置文件。Mybatis基于配置文件生成Configuration，和一个个Statement（包括了参数映射配置，动态sql语句，结果映射配置），其对应着&lt;select | update | delete | insert&gt;标签项。</p>
-<p>2.SqlSessionFactoryBuilder通过configuration生成SqlSesssionFactory，用来开启SqlSession</p>
-<p>3.SqlSession完成数据库的交互</p>
-<p>说明：Sqlsession是单线程对象，是非线程安全的，是持久化操作的独享对象，底层就封装了Jdbc的连接</p>
-<h4 id="Mybatis的一级缓存和二级缓存？"><a href="#Mybatis的一级缓存和二级缓存？" class="headerlink" title="Mybatis的一级缓存和二级缓存？"></a>Mybatis的一级缓存和二级缓存？</h4><p>缓存：合理使用缓存是优化中最常见的方法之一，将数据库查出来的数据放入缓存中，下次使用的时候不用从数据库中查询，而是直接从缓存中读取，避免频繁操作数据库，减轻数据库的压力。</p>
-<p>1.一级缓存是指SqlSession，一级缓存的作用就是在SQLSession中，默认开启一级缓存。在同一个SqlSession，执行相同的Sql的时候，第一次去数据库查询并写在缓存中，第二次执行相同的Sql的时候就会直接去缓存中取。当执行的Sql的两次查询的中间发生了增删改的操作，则SqlSession会被清空。之后每次查询就会去缓存中找，找不到就去数据库查，并把结果写进缓存。</p>
-<p>Mybatis内部缓存是使用的HashMap，key是hashcode+statemenId+sql语句，value就是查询出来的结果集映射成的对象。Sqlsession执行增删改的操作commit后会清空SqlSession缓存。</p>
-<p>2.二级缓存就是Mapper级别的缓存。Mybatis没有默认开启二级缓存，同一个namespace下的所有操作语句，都影响着同一个Cache，即二级缓存被多个SqlSession共享，是一个全局的变量。</p>
-<p>建议使用第三方缓存，比如redis。</p>
+<p>修改配置文件，修改编码格式为UTF-8</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;mydata&#x2F;mysql&#x2F;conf&#x2F;my.cnf</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line">default-character-set&#x3D;utf8</span><br><span class="line">[mysql]</span><br><span class="line">default-character-set&#x3D;utf8</span><br><span class="line">[mysqld]</span><br><span class="line">init_connect&#x3D;&#39;SET collation connection &#x3D; utf8_unicode_ci&#39;</span><br><span class="line">init_connect&#x3D;&#39;SET NAMES utf8&#39;</span><br><span class="line">character-set-server&#x3D;utf8</span><br><span class="line">collation-server&#x3D;utf8_unicode_ci</span><br><span class="line">skip-character-set-client-handshake</span><br><span class="line">skip-name-resolve</span><br></pre></td></tr></table></figure>
+
+<p>进入mysql容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it mysql &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure>
+
+<p>退出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+<p>重启</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart mysql</span><br></pre></td></tr></table></figure>
+
+<h1 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h1><p>下载 redis 镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis</span><br></pre></td></tr></table></figure>
+
+<p>创建配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p &#x2F;mydata&#x2F;redis&#x2F;conf</span><br><span class="line">touch &#x2F;mydata&#x2F;redis&#x2F;conf&#x2F;redis.conf</span><br></pre></td></tr></table></figure>
+
+<p>容器文件挂载与端口映射并启动</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="keyword">run</span><span class="bash"> -p 6379:6379 --name redis \</span></span><br><span class="line"><span class="bash">-v /mydata/redis/data:/data \</span></span><br><span class="line"><span class="bash">-v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \</span></span><br><span class="line"><span class="bash">-d redis redis-server /etc/redis/redis.conf</span></span><br></pre></td></tr></table></figure>
+
+<p>运行 redis</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it redis redis-cli</span><br></pre></td></tr></table></figure>
+
+<p>开启 aof 持久化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;mydata&#x2F;redis&#x2F;conf&#x2F;redis.conf</span><br><span class="line"># 添加如下内容</span><br><span class="line">appendonly yes</span><br></pre></td></tr></table></figure>
+
+<p>重启 redis</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart redis</span><br></pre></td></tr></table></figure>
+
 
     
 
@@ -325,7 +325,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/2020/03/24/Mybatis常见面试题/" title="Mybatis常见面试题" target="_blank">http://example.com/2020/03/24/Mybatis常见面试题/</a>
+          <a href="http://example.com/2020/07/13/Docker安装Mysql & Redis/" title="Docker安装Mysql &amp; Redis" target="_blank">http://example.com/2020/07/13/Docker安装Mysql & Redis/</a>
         </li>
         
         <li>
@@ -347,7 +347,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
         		</li>
       		
 		</ul>
@@ -359,7 +359,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
+        			<a href="/categories/Docker//" class="article-tag-list-link color2">Docker</a>
         		</li>
       		
 		</ul>
@@ -414,7 +414,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -429,18 +429,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/03/24/SpringMVC/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/09/17/%E5%AF%B9String%E5%88%9D%E7%9F%A5/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          SpringMVC
+          String
         
       </div>
     </a>
   
   
-    <a href="/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JAVA集合浅析</div>
+    <a href="/2020/06/30/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8socket.io/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">在vue中使用socket.io</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -478,9 +478,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "Mybatis常见面试题" -->
+  <!-- id: "Docker安装Mysql &amp; Redis" -->
   var giteement = new Giteement({
-    id: '20200324123416',
+    id: '20200713224904',
     owner: 'dupeng98',
     repo: 'dupeng98',
     backcall_uri: 'https://dupeng98.gitee.io/',

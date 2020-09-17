@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Mybatis常见面试题 | Hexo</title>
+  <title>Vue+Element实现动态生成新表单加校验 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+  <meta name="description" content="Vue+Element实现动态生成新表单加校验效果图： 官方文档中有写用v-for实现新增表单，但是只是单表单的新增，现在是多表单的新增。可以实现的方法是在data定义一个数组，点击新增就会在数组中push一条数据，在使用v-for进行遍历，可以达到新增的效果 代码如下：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mybatis常见面试题">
-<meta property="og:url" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:title" content="Vue+Element实现动态生成新表单加校验">
+<meta property="og:url" content="http://example.com/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Mybatis什么是Mybatis？Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。 Mybatis与Hibernate的区别？Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易 Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目">
+<meta property="og:description" content="Vue+Element实现动态生成新表单加校验效果图： 官方文档中有写用v-for实现新增表单，但是只是单表单的新增，现在是多表单的新增。可以实现的方法是在data定义一个数组，点击新增就会在数组中push一条数据，在使用v-for进行遍历，可以达到新增的效果 代码如下：">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
-<meta property="article:published_time" content="2020-03-24T04:34:16.000Z">
-<meta property="article:modified_time" content="2020-03-24T08:51:40.846Z">
+<meta property="og:image" content="http://example.com/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/1.gif">
+<meta property="article:published_time" content="2020-05-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-06-18T02:13:24.641Z">
 <meta property="article:author" content="Du Peng">
-<meta property="article:tag" content="面试题">
+<meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
+<meta name="twitter:image" content="http://example.com/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/1.gif">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,14 +188,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Mybatis常见面试题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vue+Element实现动态生成新表单加校验" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Mybatis常见面试题
+      Vue+Element实现动态生成新表单加校验
     </h1>
   
 
@@ -207,8 +207,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-        <time datetime="2020-03-24T04:34:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+<a href="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/" class="archive-article-date">
+        <time datetime="2020-05-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
 </a>
 
   
@@ -221,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">986字</span>
+      <span class="post-count">1.1k字</span>
     </span>
   </span>
 
@@ -230,7 +230,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">3分</span>
+      <span class="post-count">5分</span>
     </span>
   </span>
 </div>
@@ -241,44 +241,33 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a><center>Mybatis</center></h3><h4 id="什么是Mybatis？"><a href="#什么是Mybatis？" class="headerlink" title="什么是Mybatis？"></a>什么是Mybatis？</h4><p>Mybatis是一个持久层的框架，对JDBC进行了很好的封装，是一个不完全的ORM（对象关系映射)框架。</p>
-<h4 id="Mybatis与Hibernate的区别？"><a href="#Mybatis与Hibernate的区别？" class="headerlink" title="Mybatis与Hibernate的区别？"></a>Mybatis与Hibernate的区别？</h4><p>Mybatis是一个不完全映射框架，需要自己编写Sql，更加的灵活，适合开发需求变更频繁的项目，上手简易</p>
-<p>Hirbernate是一个完全映射框架，不需要自己编写Sql，使开发者更加关注业务流程，不太适合开发复杂的项目，上手难度较大</p>
+    <h2 id="Vue-Element实现动态生成新表单加校验"><a href="#Vue-Element实现动态生成新表单加校验" class="headerlink" title="Vue+Element实现动态生成新表单加校验"></a>Vue+Element实现动态生成新表单加校验</h2><p>效果图：<img src="1.gif"></p>
+<p>官方文档中有写用v-for实现新增表单，但是只是单表单的新增，现在是多表单的新增。可以实现的方法是在data定义一个数组，点击新增就会在数组中push一条数据，在使用v-for进行遍历，可以达到新增的效果</p>
+<p>代码如下：</p>
 <a id="more"></a>
 
-<h4 id="Mybatis-和-有什么区别？"><a href="#Mybatis-和-有什么区别？" class="headerlink" title="Mybatis  #{} 和 ${}有什么区别？"></a>Mybatis  #{} 和 ${}有什么区别？</h4><p><strong>1.</strong>#{}: 表示的是一个占位符，是预编译处理，在处理#{}的时候会将sql中的#{}替换为 ？</p>
-<p>   ${}:表示的是拼接符，是字符串替换，就是把${}替换为变量值</p>
-<p>**2.**使用#{}可以防止sql注入，提高系统的安全性</p>
-<p>#{}将传入的数据都当成字符串，会对自动传入的数据加上一个双引号</p>
-<p>${}将传入的数据直接展示sql中</p>
-<p>所以尽量使用#{}</p>
-<h4 id="Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？"><a href="#Mybatis使用的4大基本原则或者说是规则-（如何进行mapper动态代理的）？" class="headerlink" title="Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？"></a>Mybatis使用的4大基本原则或者说是规则 （如何进行mapper动态代理的）？</h4><ol>
-<li>Mppper.xml文件中的nameSpace要和接口中的全路径名一样</li>
-<li>Mapper接口的方法名要和Mapper.xml中的定义的每个statement的Id一样</li>
-<li>Mapper接口方法的参数要和Mapper.xml中定义每个Sql的parameterType的类型一致</li>
-<li>Mapper接口方法的返回值要和Mapper.xml中定义的每个Sql的resultType类型一致</li>
-</ol>
-<h4 id="Mybatis的优缺点"><a href="#Mybatis的优缺点" class="headerlink" title="Mybatis的优缺点"></a>Mybatis的优缺点</h4><p><strong>优点</strong></p>
-<ol>
-<li>基于sql编程相当灵活，sql写在xml中，降低耦合性</li>
-<li>与JDBC相比，减少了50%的代码，消除大量冗余代码，不需要手动打开连接</li>
-<li>很好的与Spring集成，与各种数据库兼容</li>
-</ol>
-<p><strong>缺点</strong></p>
-<ol>
-<li>sql语句的编写工程量大，尤其是字段多，关联表多的时候，对开发人员SQL语句功底有一定要求</li>
-<li>Sql语句依赖数据库，导致数据库移植性差，不能随意更换数据库表</li>
-</ol>
-<h4 id="简单概括Mybatis的工作原理："><a href="#简单概括Mybatis的工作原理：" class="headerlink" title="简单概括Mybatis的工作原理："></a>简单概括Mybatis的工作原理：</h4><p><img src="Mybatis%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png"></p>
-<p>1.首先加载Mybatis的配置文件（数据源，mapper映射文件等），解析配置文件。Mybatis基于配置文件生成Configuration，和一个个Statement（包括了参数映射配置，动态sql语句，结果映射配置），其对应着&lt;select | update | delete | insert&gt;标签项。</p>
-<p>2.SqlSessionFactoryBuilder通过configuration生成SqlSesssionFactory，用来开启SqlSession</p>
-<p>3.SqlSession完成数据库的交互</p>
-<p>说明：Sqlsession是单线程对象，是非线程安全的，是持久化操作的独享对象，底层就封装了Jdbc的连接</p>
-<h4 id="Mybatis的一级缓存和二级缓存？"><a href="#Mybatis的一级缓存和二级缓存？" class="headerlink" title="Mybatis的一级缓存和二级缓存？"></a>Mybatis的一级缓存和二级缓存？</h4><p>缓存：合理使用缓存是优化中最常见的方法之一，将数据库查出来的数据放入缓存中，下次使用的时候不用从数据库中查询，而是直接从缓存中读取，避免频繁操作数据库，减轻数据库的压力。</p>
-<p>1.一级缓存是指SqlSession，一级缓存的作用就是在SQLSession中，默认开启一级缓存。在同一个SqlSession，执行相同的Sql的时候，第一次去数据库查询并写在缓存中，第二次执行相同的Sql的时候就会直接去缓存中取。当执行的Sql的两次查询的中间发生了增删改的操作，则SqlSession会被清空。之后每次查询就会去缓存中找，找不到就去数据库查，并把结果写进缓存。</p>
-<p>Mybatis内部缓存是使用的HashMap，key是hashcode+statemenId+sql语句，value就是查询出来的结果集映射成的对象。Sqlsession执行增删改的操作commit后会清空SqlSession缓存。</p>
-<p>2.二级缓存就是Mapper级别的缓存。Mybatis没有默认开启二级缓存，同一个namespace下的所有操作语句，都影响着同一个Cache，即二级缓存被多个SqlSession共享，是一个全局的变量。</p>
-<p>建议使用第三方缓存，比如redis。</p>
+<blockquote>
+<p>&lt;*<a href="javascript:;">template</a>* &gt;中的代码</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-form&gt;</span><br><span class="line">      &lt;el-row style=<span class="string">&quot;margin-bottom: 10px;&quot;</span>&gt;</span><br><span class="line">        &lt;el-col :span=<span class="string">&quot;24&quot;</span> :offset=<span class="string">&quot;2&quot;</span>&gt;</span><br><span class="line">        <span class="comment">//点击添加，调用addItem方法</span></span><br><span class="line">          &lt;el-button</span><br><span class="line">          icon=<span class="string">&quot;el-icon-circle-plus&quot;</span></span><br><span class="line">          type=<span class="string">&quot;info&quot;</span></span><br><span class="line">          plain</span><br><span class="line">          align=<span class="string">&quot;center&quot;</span></span><br><span class="line">          size=<span class="string">&quot;medium&quot;</span></span><br><span class="line">          style=<span class="string">&quot;width:500px;&quot;</span></span><br><span class="line">          @click=<span class="string">&quot;addItem()&quot;</span></span><br><span class="line">          &gt;添加流程变量</span><br><span class="line">          &lt;/el-button&gt;</span><br><span class="line">        &lt;/el-col&gt;</span><br><span class="line">      &lt;/el-row&gt;</span><br><span class="line">      &lt;el-row :gutter=<span class="string">&quot;15&quot;</span> style=<span class="string">&quot;margin-bottom: 10px;&quot;</span>&gt;</span><br><span class="line">          &lt;el-col :span=<span class="string">&quot;4&quot;</span> :offset=<span class="string">&quot;3&quot;</span></span><br><span class="line">                  &gt;序号&lt;/el-col&gt;</span><br><span class="line">          &lt;el-col :span=<span class="string">&quot;6&quot;</span>  style=<span class="string">&quot;margin-left: 35px&quot;</span></span><br><span class="line">                  &gt;变量 Key&lt;/el-col&gt;</span><br><span class="line">          &lt;el-col :span=<span class="string">&quot;6&quot;</span> style=<span class="string">&quot;margin-left: 15px&quot;</span></span><br><span class="line">                  &gt;变量值&lt;/el-col&gt;</span><br><span class="line">    &lt;/el-row&gt;</span><br><span class="line">	<span class="comment">//遍历数组</span></span><br><span class="line">  &lt;el-form v-<span class="keyword">for</span>=<span class="string">&quot;(item,index) in dataForm.dynamicItem&quot;</span></span><br><span class="line">            :key=<span class="string">&quot;index&quot;</span></span><br><span class="line">            ref=<span class="string">&quot;dynamicItem&quot;</span></span><br><span class="line">            :rules=<span class="string">&quot;dataRule&quot;</span></span><br><span class="line">            :model=<span class="string">&quot;item&quot;</span></span><br><span class="line">            size=<span class="string">&quot;mini&quot;</span>&gt;</span><br><span class="line">         &lt;el-row :gutter=<span class="string">&quot;40&quot;</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;variableFormItemCol&quot;</span>&gt;</span><br><span class="line">          &lt;el-col :span=<span class="string">&quot;4&quot;</span> :offset=<span class="string">&quot;3&quot;</span> style=<span class="string">&quot;padding-left:28px;&quot;</span>&gt;</span><br><span class="line">            &lt;el-form-item label=<span class="string">&quot;&quot;</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;variableFormItem&quot;</span>&gt;</span><br><span class="line">              &lt;span&gt;&#123;&#123;index + <span class="number">1</span>&#125;&#125;&lt;/span&gt;</span><br><span class="line">            &lt;/el-form-item&gt;</span><br><span class="line">                  &lt;/el-col&gt;</span><br><span class="line">          &lt;el-col :span=<span class="string">&quot;6&quot;</span>&gt;</span><br><span class="line">            &lt;el-form-item prop=<span class="string">&quot;key&quot;</span>&gt;</span><br><span class="line">              &lt;el-input  placeholder=<span class="string">&quot;变量Key&quot;</span>  v-model.trim=<span class="string">&quot;item.key&quot;</span>&gt;&lt;/el-input&gt;</span><br><span class="line">            &lt;/el-form-item&gt;</span><br><span class="line">          &lt;/el-col&gt;</span><br><span class="line">          &lt;el-col :span=<span class="string">&quot;6&quot;</span> &gt;</span><br><span class="line">            &lt;el-form-item prop=<span class="string">&quot;value&quot;</span>&gt;</span><br><span class="line">              &lt;el-input  placeholder=<span class="string">&quot;变量值&quot;</span>  clearable  v-model.trim=<span class="string">&quot;item.value&quot;</span>&gt;&lt;/el-input&gt;</span><br><span class="line">            &lt;/el-form-item&gt;</span><br><span class="line">          &lt;/el-col&gt;</span><br><span class="line">          <span class="comment">//根据数组下标删除数组中的元素</span></span><br><span class="line">           &lt;el-col :span=<span class="string">&quot;4&quot;</span></span><br><span class="line">                    style=<span class="string">&quot;cursor:pointer;margin-top:8px&quot;</span></span><br><span class="line">                    title=<span class="string">&quot;删除&quot;</span>&gt;</span><br><span class="line">              &lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;el-icon-delete&quot;</span> style=<span class="string">&quot;color:#F56C6C&quot;</span></span><br><span class="line">                 @click=<span class="string">&quot;deleteItem(item, index)&quot;</span></span><br><span class="line">                &gt;&lt;/i&gt;</span><br><span class="line">            &lt;/el-col&gt;</span><br><span class="line">        &lt;/el-row&gt;</span><br><span class="line">  &lt;/el-form&gt;</span><br><span class="line">    &lt;/el-form&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>//定义在data中的一个数组</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      visible: <span class="literal">false</span>,</span><br><span class="line">      dataForm: &#123;</span><br><span class="line">        proInstanceId: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">        flowStatus: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">        <span class="comment">//定义一个数组</span></span><br><span class="line">        dynamicItem: [&#123;</span><br><span class="line">          key: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">          value: <span class="string">&#x27;&#x27;</span></span><br><span class="line">        &#125;]</span><br><span class="line"></span><br><span class="line">      &#125;,</span><br><span class="line">      isReadOnly: <span class="literal">false</span>,</span><br><span class="line">      title: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">      loading: <span class="literal">false</span>,</span><br><span class="line">      isAdd: <span class="literal">false</span>,</span><br><span class="line">      count: <span class="number">0</span></span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>method方法代码</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 添加变量</span></span><br><span class="line">   addItem() &#123;</span><br><span class="line">       <span class="built_in">this</span>.dataForm.dynamicItem.push(&#123;</span><br><span class="line">       key: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">       value: <span class="string">&#x27;&#x27;</span></span><br><span class="line">       &#125;);</span><br><span class="line">   &#125;</span><br><span class="line">    <span class="comment">// 删除变量</span></span><br><span class="line">   deleteItem(item, index) &#123;</span><br><span class="line">       <span class="built_in">this</span>.$confirm(<span class="string">&#x27;是否删除该流程变量, 是否继续?&#x27;</span>, <span class="string">&#x27;提示&#x27;</span>, &#123;</span><br><span class="line">         confirmButtonText: <span class="string">&#x27;确定&#x27;</span>,</span><br><span class="line">         cancelButtonText: <span class="string">&#x27;取消&#x27;</span>,</span><br><span class="line">         type: <span class="string">&#x27;warning&#x27;</span></span><br><span class="line">       &#125;).then(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">         <span class="built_in">this</span>.dataForm.dynamicItem.splice(index, <span class="number">1</span>);</span><br><span class="line">         <span class="built_in">this</span>.$message(&#123;</span><br><span class="line">           type: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">           message: <span class="string">&#x27;删除成功!&#x27;</span></span><br><span class="line">         &#125;);</span><br><span class="line">       &#125;)</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>下面进行校验，可以提交的时候进行校验，校验和普通的校验就会有点不同。因为是一个数组，不知道有多少条数据。可以使用forEach循环进行校验，废话不多说，直接看代码</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 表单提交，在提交表单的时候进行校验</span></span><br><span class="line">    <span class="keyword">async</span> dataFormSubmitHandle() &#123;</span><br><span class="line">    <span class="comment">//得到整个数组</span></span><br><span class="line">      <span class="keyword">let</span> array = <span class="built_in">this</span>.dataForm.dynamicItem;</span><br><span class="line">      <span class="keyword">try</span> &#123; </span><br><span class="line">      <span class="comment">//使用forEach循环</span></span><br><span class="line">        array.forEach(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">//这里每循环一次就校验一次，是根据数组的下标进行校验的，校验规则写在dataRule中</span></span><br><span class="line">          <span class="built_in">this</span>.$refs.dynamicItem[<span class="built_in">this</span>.count].validate().catch(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          &#125;);</span><br><span class="line">        <span class="comment">//如果数据为空，直接跳出循环。校验规则中的不为空。有时候不起作用，为了保险起见多写一次</span></span><br><span class="line">          <span class="keyword">if</span> (item.key === <span class="string">&#x27;&#x27;</span> || item.value === <span class="string">&#x27;&#x27;</span>) &#123;</span><br><span class="line">          <span class="comment">//这里使用的是抛出异常，进行跳出，因为forEach没有break;</span></span><br><span class="line">            <span class="keyword">throw</span> <span class="built_in">Error</span>();</span><br><span class="line">          &#125;</span><br><span class="line">         <span class="comment">// 在data中定义一个count=0，循环一个就加1</span></span><br><span class="line">          <span class="built_in">this</span>.count++;</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      <span class="comment">//抛出一次就要把count设置为0,如果不设置为0，循环多次加起来的值不会为0，校验的时候就会出问题</span></span><br><span class="line">        <span class="built_in">this</span>.count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="built_in">this</span>.loading = <span class="literal">true</span>;</span><br><span class="line">      <span class="comment">// 如果校验成功，请求后台</span></span><br><span class="line">      <span class="keyword">await</span> api.saveVariable(<span class="built_in">this</span>.dataForm).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">//省略一些代码</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//校验规则</span></span><br><span class="line">dataRule() &#123;</span><br><span class="line">      <span class="keyword">return</span> &#123;</span><br><span class="line">        key: [</span><br><span class="line">          &#123; <span class="attr">required</span>: <span class="literal">true</span>, <span class="attr">message</span>: <span class="string">&#x27;必填项不能为空&#x27;</span>, <span class="attr">trigger</span>: <span class="string">&#x27;blur&#x27;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">min</span>: <span class="number">1</span>, <span class="attr">max</span>: <span class="number">254</span>, <span class="attr">message</span>: <span class="string">&#x27;长度1 - 254位&#x27;</span> &#125;</span><br><span class="line">        ],</span><br><span class="line">        value: [</span><br><span class="line">          &#123; <span class="attr">required</span>: <span class="literal">true</span>, <span class="attr">message</span>: <span class="string">&#x27;必填项不能为空&#x27;</span>, <span class="attr">trigger</span>: <span class="string">&#x27;blur&#x27;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">min</span>: <span class="number">1</span>, <span class="attr">max</span>: <span class="number">254</span>, <span class="attr">message</span>: <span class="string">&#x27;长度1 - 254位&#x27;</span> &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
 
     
 
@@ -325,7 +314,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/2020/03/24/Mybatis常见面试题/" title="Mybatis常见面试题" target="_blank">http://example.com/2020/03/24/Mybatis常见面试题/</a>
+          <a href="http://example.com/2020/05/24/Vue+Element实现动态生成新表单加校验/" title="Vue+Element实现动态生成新表单加校验" target="_blank">http://example.com/2020/05/24/Vue+Element实现动态生成新表单加校验/</a>
         </li>
         
         <li>
@@ -347,7 +336,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
         		</li>
       		
 		</ul>
@@ -359,7 +348,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -414,7 +403,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -429,18 +418,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/03/24/SpringMVC/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          SpringMVC
+          let、const、var的区别
         
       </div>
     </a>
   
   
-    <a href="/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JAVA集合浅析</div>
+    <a href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Activiti数据库表结构</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -478,9 +467,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "Mybatis常见面试题" -->
+  <!-- id: "Vue+Element实现动态生成新表单加校验" -->
   var giteement = new Giteement({
-    id: '20200324123416',
+    id: '20200524000000',
     owner: 'dupeng98',
     repo: 'dupeng98',
     backcall_uri: 'https://dupeng98.gitee.io/',
