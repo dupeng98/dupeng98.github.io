@@ -304,6 +304,118 @@
 
 
   
+    <article id="post-2020-10-23-Json串与实体类和JSONObject之间的相互转换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/10/23/2020-10-23-Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" target="_blank">Json串与实体类和JSONObject之间的相互转换</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/10/23/2020-10-23-Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
+        <time datetime="2020-10-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-23</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="Json串与实体类和JSONObject之间的相互转换"><a href="#Json串与实体类和JSONObject之间的相互转换" class="headerlink" title="Json串与实体类和JSONObject之间的相互转换"></a><center>Json串与实体类和JSONObject之间的相互转换</center></h3><p><strong>1.实体类或集合转JSON串</strong></p>
+<blockquote>
+<p>String s = JSONObject.toJSONString(实体类)；</p>
+</blockquote>
+<p><strong>2.JSON串转JSONObject</strong></p>
+<blockquote>
+<p>JSONObject jsonobject =  JSONObject.parseObject(jsonString);</p>
+</blockquote>
+<p><strong>3.JSON串转实体类</strong></p>
+<blockquote>
+<p>实体类 bean = JSON.parseObject(json,实体类.class);</p>
+</blockquote>
+<p><strong>4.JSON串转带泛型的List的集合</strong></p>
+<blockquote>
+<p>List&lt;实体类或者其他泛型&gt; list =  JSON.parseObject(json,new TypeReference&lt;List&lt;实体类或其他泛型&gt;&gt;(){});</p>
+</blockquote>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/10/23/2020-10-23-Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Docker安装Mysql &amp; Redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1154,108 +1266,6 @@
 
 
   
-    <article id="post-Centos7安装Docker并配置阿里镜像源" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/" target="_blank">Centos7安装Docker并配置阿里镜像源</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/" class="archive-article-date">
-        <time datetime="2020-03-24T14:49:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Centos7安装Docker并配置阿里镜像源"><a href="#Centos7安装Docker并配置阿里镜像源" class="headerlink" title="Centos7安装Docker并配置阿里镜像源"></a><center>Centos7安装Docker并配置阿里镜像源</center></h2><h2 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h2><blockquote>
-<p>卸载旧版本</p>
-</blockquote>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-selinux \</span><br><span class="line">                  docker-engine-selinux \</span><br><span class="line">                  docker-engine</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Docker//" class="article-tag-list-link color2">Docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1406,6 +1416,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ES6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>
