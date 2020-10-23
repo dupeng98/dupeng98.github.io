@@ -6,24 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dupeng98.gitee.io">
-  <title>SpringMVC | Hexo</title>
+  <title>Archives: 2020/10 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="SpringMVC1、什么是SpringMVC? SpringMVC是一个基于MVC架构的用来简化web应用程序开发的框架，通过把Model，View，Conterller分离，将web层解耦。 M (Model,模型，相当于实体类..) V(View，视图，JSP，Html…) C(Controller，控制器，控制层)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="SpringMVC">
-<meta property="og:url" content="https://dupeng98.gitee.io/2020/03/24/SpringMVC/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://dupeng98.gitee.io/archives/2020/10/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="SpringMVC1、什么是SpringMVC? SpringMVC是一个基于MVC架构的用来简化web应用程序开发的框架，通过把Model，View，Conterller分离，将web层解耦。 M (Model,模型，相当于实体类..) V(View，视图，JSP，Html…) C(Controller，控制器，控制层)">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://dupeng98.gitee.io/2020/03/24/SpringMVC/SpringMVC.png">
-<meta property="article:published_time" content="2020-03-24T09:05:15.000Z">
-<meta property="article:modified_time" content="2020-06-18T02:19:27.586Z">
 <meta property="article:author" content="Du Peng">
-<meta property="article:tag" content="面试题">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://dupeng98.gitee.io/2020/03/24/SpringMVC/SpringMVC.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,378 +181,46 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SpringMVC" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-      <header class="article-header">
-  
-  
-    <h1 class="article-title" itemprop="name">
-      SpringMVC
-    </h1>
-  
-
-
-  
-  
-        
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-<a href="/2020/03/24/SpringMVC/" class="archive-article-date">
-        <time datetime="2020-03-24T09:05:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+<a href="/2020/10/23/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/" class="archive-article-date">
+        <time datetime="2020-10-23T02:07:41.162Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-23</time>
 </a>
 
-  
-  
-    
-<div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <!-- fonts.scss -->
-      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
-      <i class="icon-statistics"></i>
-      <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">953字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="icon-book icon"></i>
-      <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">3分</span>
-    </span>
-  </span>
-</div>
-
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a><center>SpringMVC</center></h3><h4 id="1、什么是SpringMVC"><a href="#1、什么是SpringMVC" class="headerlink" title="1、什么是SpringMVC?"></a>1、什么是SpringMVC?</h4><blockquote>
-<p>SpringMVC是一个基于MVC架构的用来简化web应用程序开发的框架，通过把Model，View，Conterller分离，将web层解耦。</p>
-<p>M (Model,模型，相当于实体类..)</p>
-<p>V(View，视图，JSP，Html…)</p>
-<p>C(Controller，控制器，控制层)</p>
-</blockquote>
-<a id="more"></a>
-
-<h4 id="2、SpringMVC的执行流程"><a href="#2、SpringMVC的执行流程" class="headerlink" title="2、SpringMVC的执行流程"></a>2、SpringMVC的执行流程</h4><blockquote>
-<ul>
-<li><p>用户发送请求到前端控制器DispatherServlet(前端控制器)</p>
-</li>
-<li><p>前端控制器接收到请求以后，把请求交给HandlerMapping（处理器映射器）进行处理，请求获取Hander</p>
-</li>
-<li><p>处理器映射器根据请求的url找到具体的处理器，生成处理器对象以处理器拦截器并返回给前端控制器</p>
-</li>
-<li><p>前端控制器在调用HanderAdapter(处理器适配器)</p>
-</li>
-<li><p>处理器适配器经过适配在调用具体的处理器（Handler）也叫后端控制器</p>
-</li>
-<li><p>Handler执行完成以后，返回ModelAndView</p>
-</li>
-<li><p>处理器适配器在将Handler返回的ModelAndView返回给前端控制器</p>
-</li>
-<li><p>前端控制器在将ModelAndVIew交给视图解析器进行解析</p>
-</li>
-<li><p>视图解析器完成以后返回具体的View</p>
-</li>
-<li><p>前端控制器在对View进行渲染视图</p>
-</li>
-<li><p>响应用户</p>
-</li>
-</ul>
-</blockquote>
-<p><img src="SpringMVC.png"></p>
-<h4 id="3、SpringMVC的优点"><a href="#3、SpringMVC的优点" class="headerlink" title="3、SpringMVC的优点"></a>3、SpringMVC的优点</h4><blockquote>
-<ul>
-<li>可以支持各种视图技术，不止局限于JSP</li>
-<li>可以与Spring框架很好的集成</li>
-<li>清晰的角色分配，减低耦合性，降低了程序之间的耦合性</li>
-</ul>
-</blockquote>
-<h4 id="4、SpringMVC的主要组件"><a href="#4、SpringMVC的主要组件" class="headerlink" title="4、SpringMVC的主要组件"></a>4、SpringMVC的主要组件</h4><blockquote>
-<ul>
-<li>前端控制器 DispatcherServlet（不需要程序员开发）</li>
-<li>处理器映射器 HandlerMapping（不需要程序员开发）</li>
-<li>处理器适配器 HandlerAdapter</li>
-<li>处理器 Handler（需要程序员开发）</li>
-<li>视图解析器 ViewResolver（不需要程序员开发）</li>
-<li>视图View（需要程序员开发）</li>
-</ul>
-</blockquote>
-<h4 id="5、SpringMVC怎么样设定重定向和转发的？"><a href="#5、SpringMVC怎么样设定重定向和转发的？" class="headerlink" title="5、SpringMVC怎么样设定重定向和转发的？"></a>5、SpringMVC怎么样设定重定向和转发的？</h4><blockquote>
-<p>先说一下转发和重定向的区别</p>
-<ul>
-<li><p>转发是服务端的行为，而重定向是客户端的行为（而其实就是浏览器的行为）</p>
-</li>
-<li><p>他们最明显的区别就是，转发在地址栏没有变化  重定向是有变化的</p>
-</li>
-<li><p>如果从效率来说的话，转发是要比重定向的效率高</p>
-<p>在返回值前面加上forward 就是转发</p>
-<p>返回值前面加上redirect就是重定向</p>
-</li>
-</ul>
-</blockquote>
-<h4 id="6、SpringMVC常用的注解"><a href="#6、SpringMVC常用的注解" class="headerlink" title="6、SpringMVC常用的注解"></a>6、SpringMVC常用的注解</h4><blockquote>
-<ul>
-<li><p>@RequestMapping  用于处理请求 url 映射的注解，可用于类或方法上</p>
-</li>
-<li><p>@RequestBody  注解实现接收http请求的json数据，将json转换为java对象。</p>
-</li>
-<li><p>@ResponseBody 注解实现将conreoller方法返回对象转化为json对象响应给客户。</p>
-</li>
-</ul>
-</blockquote>
-<p>7、<strong>Spring MVC的异常处理 ？</strong></p>
-<blockquote>
-<p>可以将异常抛给Spring进行处理，由Spring框架进行处理，需要简单的配置一下异常处理器，在异常处理器添加视图页面就可</p>
-</blockquote>
-<h4 id="8、Springmvc-用什么对象从后台向前台传递数据的？"><a href="#8、Springmvc-用什么对象从后台向前台传递数据的？" class="headerlink" title="8、Springmvc 用什么对象从后台向前台传递数据的？"></a>8、Springmvc 用什么对象从后台向前台传递数据的？</h4><blockquote>
-<p>通过ModelMap对象,可以在这个对象里面用put方法,把对象加到里面,前台就可以通过el表达式拿到。</p>
-</blockquote>
-<h4 id="9、Springmvc-怎么和AJAX交互的？"><a href="#9、Springmvc-怎么和AJAX交互的？" class="headerlink" title="9、Springmvc 怎么和AJAX交互的？"></a>9、Springmvc 怎么和AJAX交互的？</h4><blockquote>
-<p>通过Jackson框架就可以把Java里面的对象直接转化成Js可以识别的Json对象。具体步骤如下 </p>
-<ul>
-<li>加入Jackson.jar</li>
-<li>在配置文件中配置json的映射</li>
-<li>在接受Ajax方法里面可以直接返回Object,List等,但方法前面要加上@ResponseBody注解。</li>
-</ul>
-</blockquote>
-<h4 id="10、Springmvc-中如何解决-GET-POST请求中文乱码问题？"><a href="#10、Springmvc-中如何解决-GET-POST请求中文乱码问题？" class="headerlink" title="10、Springmvc 中如何解决 GET | POST请求中文乱码问题？"></a>10、Springmvc 中如何解决 GET | POST请求中文乱码问题？</h4><blockquote>
-<p><strong>POST方式：</strong>可以每次在request解析数据时设置编码格式：request.setCharacterEncoding(“utf-8”);</p>
-<p>也可以使用编码过滤器来解决，最常用的方法是使用Spring提供的编码过滤器</p>
-</blockquote>
-<blockquote>
-<p><strong>GET方式：</strong></p>
-<p><strong>每次发生请求之前对URL进行编码：</strong></p>
-<p>例如：Location.href=”/encodeURI”(“<a target="_blank" rel="noopener" href="http://localhost/test/s?name=%E4%B8%AD%E6%96%87&amp;sex=%E5%A5%B3%E2%80%9D">http://localhost/test/s?name=中文&amp;sex=女”</a>);</p>
-<p><strong>更简便的方法</strong>，在服务器端配置URL编码格式：修改tomcat的配置文件server.xml：</p>
-</blockquote>
-
-    
-
-    
-    <div class="page-reward">
-      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
-        <div class="tooltip tooltip-east">
-          <span class="tooltip-item">
-            赏
-          </span>
-          <span class="tooltip-content">
-            <span class="tooltip-text">
-              <span class="tooltip-inner">
-                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
-                    class="icon icon-quo-right"></i></p>
-                <div class="reward-box">
-                  
-                  <div class="reward-box-item">
-                    <img class="reward-img" src="/img/alipay.jpg">
-                    <span class="reward-type">支付宝</span>
-                  </div>
-                  
-                  
-                  <div class="reward-box-item">
-                    <img class="reward-img" src="/img/weixin.png">
-                    <span class="reward-type">微信</span>
-                  </div>
-                  
-                </div>
-              </span>
-            </span>
-          </span>
         </div>
-      </a>
-    </div>
-    
+    	 
 
-    
-    <div class="declare"> 
-      <ul class="post-copyright">
-        <li>
-          <strong>本文作者：</strong>
-          Du Peng
-        </li>
-        <li>
-          <strong>本文链接：</strong>
-          <a href="https://dupeng98.gitee.io/2020/03/24/SpringMVC/" title="SpringMVC" target="_blank">https://dupeng98.gitee.io/2020/03/24/SpringMVC/</a>
-        </li>
-        
-        <li>
-          <strong>版权声明： </strong>
+        <div class="article-info info-on-right">
           
-          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
-        </li>
-        
-      </ul>
-    </div>
-    
+          
 
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-
-    
-    
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a> -->
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee.io/2020/03/24/SpringMVC/" alt="微信分享二维码"> -->
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-
-    
-    <div class="clearfix"></div>
-  </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-<nav id="article-nav">
-  
-    <a href="/2020/03/24/Spring/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Spring
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Mybatis常见面试题</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    </div></section>
   
-</nav>
 
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-
-
-
-  <div id="giteement-ctn"></div>
-  
-    <link rel="stylesheet" href="/lib/default.css">
-    <script src="/lib/giteement.browser.js"></script>
-  
-  <script>
-  <!-- id: "SpringMVC" -->
-  var giteement = new Giteement({
-    id: '20200324170515',
-    owner: 'dupeng98',
-    repo: 'dupeng98',
-    backcall_uri: 'https://dupeng98.gitee.io/',
-    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
-    oauth: {
-      client_id: '56b254f90c4a97b7fad6906798a5e8ca91c2540fc2ea6935874eabc0fec6b5dc',
-      client_secret: 'e59e3987a21522cdb9f0662d29db2761edb213e202107fdcf07555e5e7b0671f'
-    },
-  })
-  giteement.render('giteement-ctn')
-  </script>
-
-
-
-
-
-
+    
 
 
           </div>
@@ -600,8 +261,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

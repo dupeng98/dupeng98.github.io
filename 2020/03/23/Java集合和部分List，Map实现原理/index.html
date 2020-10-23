@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dupeng98.gitee.io">
-  <title>String | Hexo</title>
+  <title>Java集合和部分List，Map实现原理 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="对String的了解1.String是可变的，可以被子类继承吗？ String是final修饰的，不可变，也不能被继承 2.String，StringBuffer，StirngBuilder有什么区别？ 最大的不同就是String是不可变的，后两者是可变的 StringBuffer是线程安全的，StringBuilder是线程不安全的但是速度快">
+  <meta name="description" content="Java集合和部分List，Map实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:type" content="article">
-<meta property="og:title" content="String">
-<meta property="og:url" content="https://dupeng98.gitee.io/2020/03/24/%E5%AF%B9String%E5%88%9D%E7%9F%A5/index.html">
+<meta property="og:title" content="Java集合和部分List，Map实现原理">
+<meta property="og:url" content="https://dupeng98.gitee.io/2020/03/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="对String的了解1.String是可变的，可以被子类继承吗？ String是final修饰的，不可变，也不能被继承 2.String，StringBuffer，StirngBuilder有什么区别？ 最大的不同就是String是不可变的，后两者是可变的 StringBuffer是线程安全的，StringBuilder是线程不安全的但是速度快">
+<meta property="og:description" content="Java集合和部分List，Map实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://dupeng98.gitee.io/.io//String.png">
-<meta property="article:published_time" content="2020-03-23T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-21T03:29:02.239Z">
+<meta property="og:image" content="https://dupeng98.gitee.io/.io//%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
+<meta property="article:published_time" content="2020-03-23T08:27:43.000Z">
+<meta property="article:modified_time" content="2020-10-23T02:02:27.268Z">
 <meta property="article:author" content="Du Peng">
 <meta property="article:tag" content="面试题">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://dupeng98.gitee.io/.io//String.png">
+<meta name="twitter:image" content="https://dupeng98.gitee.io/.io//%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,14 +188,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-对String初知" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java集合和部分List，Map实现原理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      String
+      Java集合和部分List，Map实现原理
     </h1>
   
 
@@ -207,8 +207,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/03/24/%E5%AF%B9String%E5%88%9D%E7%9F%A5/" class="archive-article-date">
-        <time datetime="2020-03-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+<a href="/2020/03/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" class="archive-article-date">
+        <time datetime="2020-03-23T08:27:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-23</time>
 </a>
 
   
@@ -221,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">234字</span>
+      <span class="post-count">971字</span>
     </span>
   </span>
 
@@ -230,7 +230,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">3分</span>
     </span>
   </span>
 </div>
@@ -241,28 +241,116 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="对String的了解"><a href="#对String的了解" class="headerlink" title="对String的了解"></a><strong><center>对String的了解</center></strong><center></center></h3><p>1.String是可变的，可以被子类继承吗？</p>
-<p>String是final修饰的，不可变，也不能被继承</p>
-<p>2.String，StringBuffer，StirngBuilder有什么区别？</p>
-<p>最大的不同就是String是不可变的，后两者是可变的</p>
-<p>StringBuffer是线程安全的，StringBuilder是线程不安全的但是速度快</p>
+    <h3 id="Java集合和部分List，Map实现原理"><a href="#Java集合和部分List，Map实现原理" class="headerlink" title=" Java集合和部分List，Map实现原理"></a><center> Java集合和部分List，Map实现原理</center></h3><blockquote>
+<p>List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口</p>
+<p>List下有ArrayList，Vector，LinkedList</p>
+<p>Map下有Hsahtable，LinkedMap，HashMap，TreeMap</p>
+<p>Set下有HashSet，LinkedSet，TreeSet</p>
+</blockquote>
 <a id="more"></a>
 
-<p>3.String str = new String(“abc”);创建了几个对象，为什么？</p>
-<p>创建了两个对象，“abc”本身是在常量池中，通过new又创建了在堆空间中。    可以借助第4题解释</p>
-<p>4.Stirng s1= “abc”; </p>
-<p>Stirng s2= “abc”; </p>
-<p>String s3 = new String(“abc”);</p>
-<p>String s4 = new String(“abc”);</p>
-<p>s1 == s2吗   答：相等</p>
-<p>s1 == s3吗   答：不相等</p>
-<p>s1 == s4吗  答：不相等</p>
-<p>s3 == s4吗  答： 不相等</p>
-<p>另外在解释一点  == 比较的是内容和地址值是否相同</p>
-<p>而equls比较的是内容是否一致</p>
-<p>可以用一张图解释String两种实例的方式并解答上述问题</p>
-<p><img src="/.io//String.png"></p>
 
+
+<p><img src="/.io//%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg"></p>
+<h3 id="List-是有序的，可重复的"><a href="#List-是有序的，可重复的" class="headerlink" title="List      是有序的，可重复的"></a>List      是有序的，可重复的</h3><ul>
+<li><p><strong>ArrayList</strong></p>
+<blockquote>
+<p>优点：底层是数组，查询快，增删慢</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程不安全，效率快</p>
+</blockquote>
+<p><strong>底层源码分析：</strong></p>
+<p><strong>JDK7的情况下：</strong></p>
+<blockquote>
+<p>new ArrayList(); 底层创建了一个长度为10的数组，如果一直添加，导致数组的容量不够，就会扩容，扩容为原来的1.5倍，同时将原有的数组复制到新的数组中</p>
+</blockquote>
+<blockquote>
+<p>结论：建议使用带参的构造器 new ArrayList(50);，一开始就创建了指定的长度，避免了中间扩容</p>
+</blockquote>
+<p><strong><em>JDK8</em>中的变化</strong></p>
+<blockquote>
+<p>在new ArrayList的时候并没有创建长度为10的数组，只创建了一个空的数组</p>
+<p>在第一次add()的时候，才创建了长度为10的数组</p>
+<p>后续和JDK7 中的一样</p>
+</blockquote>
+<blockquote>
+<p>小结：ArrayList在jdk中类似单例的饿汗式。在JDK8中就类似单例的懒汉式，延迟了加载</p>
+</blockquote>
+</li>
+<li><p><strong>Vector 最古老的一个数组，JDK1中就有</strong></p>
+<blockquote>
+<p>优点：底层也是使用数组实现的，查询快，增删慢</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程安全但是效率低</p>
+</blockquote>
+</li>
+<li><p><strong>LinkedList</strong></p>
+<blockquote>
+<p>优点：底层是双向链表结构实现的，查询慢，对于频繁的增删快</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程不安全，但是效率高</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Set-是无序的，是唯一的-使用最少的"><a href="#Set-是无序的，是唯一的-使用最少的" class="headerlink" title="Set    是无序的，是唯一的(使用最少的)"></a>Set    是无序的，是唯一的(使用最少的)</h3><ul>
+<li><p><strong>HashSet(无序的，唯一的)</strong></p>
+<blockquote>
+<p>底层结构是哈希表</p>
+</blockquote>
+<blockquote>
+<p>怎么保证元素的唯一性？ 依赖两个方法 HashCode()和equls</p>
+</blockquote>
+</li>
+<li><p><strong>LInkedHashSet（有序的，唯一的）</strong></p>
+<blockquote>
+<p>底层结构是链表和哈希表</p>
+<p>链表保证元素的唯一性，哈希保证元素的唯一</p>
+</blockquote>
+</li>
+<li><p><strong>TreeSet（唯一的，有序的）</strong></p>
+<blockquote>
+<p>底层是红黑树（暂时对红黑树的认知很少）</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="Map-存储-k-v对的数据，底层是数组加链表进行存储的"><a href="#Map-存储-k-v对的数据，底层是数组加链表进行存储的" class="headerlink" title="Map     存储 k-v对的数据，底层是数组加链表进行存储的"></a>Map     存储 k-v对的数据，底层是数组加链表进行存储的</h2><blockquote>
+<p>HashMap是map的主要实现类，线程是不安全的，但是效率高，但是不能存储null值的k和v</p>
+</blockquote>
+<blockquote>
+<p>Hashtable是古老的实现类，线程是安全的，但是效率低，可以存储null值的k和v</p>
+</blockquote>
+<p><strong><em>HashMap</em>的底层原理：(高频面试题)</strong></p>
+<p><strong>JDK7中：</strong></p>
+<blockquote>
+<p>HashMap map = new HashMap的时候，底层就会创建一个长度为16的数组</p>
+</blockquote>
+<p><strong>在map.put(k1,v1)时</strong></p>
+<blockquote>
+<p>情况一：*首先先计算k1所在类Hashcode()方法计算哈希值，就会得到k1-v1的存放位置，如果这个位置上没有数据，k1-v1就会添加成功，</p>
+<p>如果在这个位置上有数据，就意味着（在这个位置上有一个或者多个数据，是以链表的方式存在的）</p>
+</blockquote>
+<blockquote>
+<p>情况二：*如果k1的哈希值和其余的数据的哈希值不一样，此时k1-v1就会添加成功</p>
+</blockquote>
+<blockquote>
+<p>情况三：*如果k1的哈希值和其余的数据的哈希值一样，此时就会调用equls方法，如果返回的是false,则添加成功</p>
+<p>如果返回的是true，则用k1的vule值替换掉原来的值</p>
+</blockquote>
+<p>关于扩容问题：在不断的添加过程中，默认的扩容方式是将原来的容量扩大2倍，并将原来的值复制过来。</p>
+<p><strong>JDK7和JDK8中的不同：</strong></p>
+<blockquote>
+<p>JDK8中，在new HashMap()的时候并没有创建一个长度为16的数组，而是在进行第一次put的时候才创建了一个长度为16的数组。</p>
+<p>在JDK8中底层是使用  数组加链表加红黑树进行存储的</p>
+</blockquote>
+<blockquote>
+<p>什么时候用到红黑树呢？当在数组的一个索引位置上的以链表的形式存在的数据超过8个了，而且当数组的长度超过64了，此时索引位置上的所有数据改为红黑树存储。</p>
+</blockquote>
+<center></center>
+
+<h3 id="有不对的地方欢迎在评论处指正"><a href="#有不对的地方欢迎在评论处指正" class="headerlink" title="有不对的地方欢迎在评论处指正"></a><center>有不对的地方欢迎在评论处指正</center></h3>
     
 
     
@@ -308,7 +396,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://dupeng98.gitee.io/2020/03/24/对String初知/" title="String" target="_blank">https://dupeng98.gitee.io/2020/03/24/对String初知/</a>
+          <a href="https://dupeng98.gitee.io/2020/03/23/Java集合和部分List，Map实现原理/" title="Java集合和部分List，Map实现原理" target="_blank">https://dupeng98.gitee.io/2020/03/23/Java集合和部分List，Map实现原理/</a>
         </li>
         
         <li>
@@ -323,6 +411,11 @@
 
   </div>
   <div class="article-info article-info-index">
+    
+    <div class="article-pop-out tagcloud">
+      <i class="icon-tuding"></i>
+      <a class="article-tag-list-link color3">置顶</a>
+    </div>
     
     
 	<div class="article-tag tagcloud">
@@ -397,7 +490,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee.io/2020/03/24/%E5%AF%B9String%E5%88%9D%E7%9F%A5/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee.io/2020/03/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -412,20 +505,15 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/24/String/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Mybatis常见面试题
+          String
         
       </div>
     </a>
   
-  
-    <a href="/2020/03/23/JAVA%E9%9B%86%E5%90%88%E6%B5%85%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JAVA集合浅析</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -461,9 +549,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "String" -->
+  <!-- id: "Java集合和部分List，Map实现原理" -->
   var giteement = new Giteement({
-    id: '20200324000000',
+    id: '20200323162743',
     owner: 'dupeng98',
     repo: 'dupeng98',
     backcall_uri: 'https://dupeng98.gitee.io/',
