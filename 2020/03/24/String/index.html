@@ -6,21 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dupeng98.gitee">
-  <title>Hexo</title>
+  <title>String | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://dupeng98.gitee/index.html">
+  <meta name="description" content="**String1.String是可变的，可以被子类继承吗？ String是final修饰的，不可变，也不能被继承 2.String，StringBuffer，StirngBuilder有什么区别？ 最大的不同就是String是不可变的，后两者是可变的 StringBuffer是线程安全的，StringBuilder是线程不安全的但是速度快">
+<meta property="og:type" content="article">
+<meta property="og:title" content="String">
+<meta property="og:url" content="https://dupeng98.gitee/2020/03/24/String/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="**String1.String是可变的，可以被子类继承吗？ String是final修饰的，不可变，也不能被继承 2.String，StringBuffer，StirngBuilder有什么区别？ 最大的不同就是String是不可变的，后两者是可变的 StringBuffer是线程安全的，StringBuilder是线程不安全的但是速度快">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://dupeng98.gitee/2020/03/24/String/String.png">
+<meta property="article:published_time" content="2020-03-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-10-23T01:52:22.430Z">
 <meta property="article:author" content="Du Peng">
+<meta property="article:tag" content="面试题">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dupeng98.gitee/2020/03/24/String/String.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -185,1082 +188,294 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-String" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
-    <script src="/lib/oauthcallback.browser.js"></script>
+  
+    <h1 class="article-title" itemprop="name">
+      String
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2020/03/24/String/" class="archive-article-date">
+        <time datetime="2020-03-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">230字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="String"><a href="#String" class="headerlink" title="**String"></a>**<center>String<center></center></center></h3><p>1.String是可变的，可以被子类继承吗？</p>
+<p>String是final修饰的，不可变，也不能被继承</p>
+<p>2.String，StringBuffer，StirngBuilder有什么区别？</p>
+<p>最大的不同就是String是不可变的，后两者是可变的</p>
+<p>StringBuffer是线程安全的，StringBuilder是线程不安全的但是速度快</p>
+<a id="more"></a>
+
+<p>3.String str = new String(“abc”);创建了几个对象，为什么？</p>
+<p>创建了两个对象，“abc”本身是在常量池中，通过new又创建了在堆空间中。    可以借助第4题解释</p>
+<p>4.Stirng s1= “abc”; </p>
+<p>Stirng s2= “abc”; </p>
+<p>String s3 = new String(“abc”);</p>
+<p>String s4 = new String(“abc”);</p>
+<p>s1 == s2吗   答：相等</p>
+<p>s1 == s3吗   答：不相等</p>
+<p>s1 == s4吗  答：不相等</p>
+<p>s3 == s4吗  答： 不相等</p>
+<p>另外在解释一点  == 比较的是内容和地址值是否相同</p>
+<p>而equls比较的是内容是否一致</p>
+<p>可以用一张图解释String两种实例的方式并解答上述问题</p>
+<p><img src="/2020/03/24/String/String.png"></p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Du Peng
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://dupeng98.gitee/2020/03/24/String/" title="String" target="_blank">https://dupeng98.gitee/2020/03/24/String/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee/2020/03/24/String/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2020/03/24/Mybatis%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Mybatis常见面试题
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+  <div id="giteement-ctn"></div>
+  
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
   
   <script>
-    Oauthcallback();
+  <!-- id: "String" -->
+  var giteement = new Giteement({
+    id: '20200324000000',
+    owner: 'dupeng98',
+    repo: 'dupeng98',
+    backcall_uri: 'https://dupeng98.gitee.io/',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: '56b254f90c4a97b7fad6906798a5e8ca91c2540fc2ea6935874eabc0fec6b5dc',
+      client_secret: 'e59e3987a21522cdb9f0662d29db2761edb213e202107fdcf07555e5e7b0671f'
+    },
+  })
+  giteement.render('giteement-ctn')
   </script>
 
 
-  
-    <article id="post-Java集合和部分List，Map实现原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" target="_blank">Java集合和部分List，Map实现原理</a>
-  
-    </h1>
-  
 
 
-  
-  
-<a href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" class="archive-article-date">
-        <time datetime="2020-10-23T08:27:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-23</time>
-</a>
 
-  
-  
-    
 
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="Java集合和部分List，Map实现原理"><a href="#Java集合和部分List，Map实现原理" class="headerlink" title=" Java集合和部分List，Map实现原理"></a><center> Java集合和部分List，Map实现原理</center></h3><blockquote>
-<p>List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口</p>
-<p>List下有ArrayList，Vector，LinkedList</p>
-<p>Map下有Hsahtable，LinkedMap，HashMap，TreeMap</p>
-<p>Set下有HashSet，LinkedSet，TreeSet</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    <div class="article-pop-out tagcloud">
-      <i class="icon-tuding"></i>
-      <a class="article-tag-list-link color3">置顶</a>
-    </div>
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Docker安装Mysql &amp; Redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/" target="_blank">Docker安装Mysql &amp; Redis</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/" class="archive-article-date">
-        <time datetime="2020-07-13T14:49:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-13</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Docker安装Mysql-amp-Redis"><a href="#Docker安装Mysql-amp-Redis" class="headerlink" title="Docker安装Mysql &amp; Redis"></a><center>Docker安装Mysql &amp; Redis</center></h2><p>下载 mysql 镜像</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull mysql:5.7   :后是指定的具体哪个版本</span><br></pre></td></tr></table></figure>
-
-<p>容器文件挂载与端口映射并启动</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="keyword">run</span><span class="bash"> -p 3306:3306 --name mysql \</span></span><br><span class="line"><span class="bash">-v /mydata/mysql/<span class="built_in">log</span>:/var/<span class="built_in">log</span>/mysql \</span></span><br><span class="line"><span class="bash">-v /mydata/mysql/data:/var/lib/mysql \</span></span><br><span class="line"><span class="bash">-v /mydata/mysql/conf:/etc/mysql \</span></span><br><span class="line"><span class="bash">-e MYSQL_ROOT_PASSWORD=root \</span></span><br><span class="line"><span class="bash">-d mysql:5.7</span></span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Docker//" class="article-tag-list-link color2">Docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-在vue中使用socket.io" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/06/30/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8socket.io/" target="_blank">在vue中使用socket.io</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/06/30/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8socket.io/" class="archive-article-date">
-        <time datetime="2020-06-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="在vue中使用socket-io"><a href="#在vue中使用socket-io" class="headerlink" title="在vue中使用socket.io"></a>在vue中使用socket.io</h2><p>​        公司买了一个发票扫描仪，让我进行对接。以前没有接触过关于硬件方面的东西，摸索了一阵子…….</p>
-<p>经过和卖家开发人员的沟通，最简单直接的方式就是使用对方给的几个关于js的开发包集成到项目中，后台不用动，直接安装他们给的一个Java应用程序，然后前台调用接口。但是问题来了，</p>
-<p>1.他们给的是Jquery写的Js开发包，公司项目是vue写的，不能直接用，需要改写。(只是稍微费点时间，难度不大)</p>
-<p>2.最主要的问题是，他们直接用的是socket.io.js文件，vue项目不能直接用，vue有专门使用socket.io方法。简单写一下踩坑的过程</p>
-<blockquote>
-<p>前端和后端交互的时候，一般使用的是ajax，但是ajax无法实时获取更新的数据，采用轮询方式(轮询就是隔一段时间发起一些请求)，开销会非常大,且后端也无法主动推送数据给前端。vue提供了socket.io来解决这个问题，一旦数据进行更新，服务端可主动将数据推送至客户端，常用于消息类推送的场景中。</p>
-</blockquote>
-<p><strong>一、安装依赖</strong></p>
-<blockquote>
-<p>npm install vue-socket.io –save</p>
-<p>npm install socket.io-client –save</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2020/06/30/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8socket.io/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/06/30/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8socket.io/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Vue父子组件传值" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/06/24/Vue%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/" target="_blank">Vue父子组件传值</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/06/24/Vue%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/" class="archive-article-date">
-        <time datetime="2020-06-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <blockquote>
-<p>父组件传值给子组件：子组件通过poops接收数据</p>
-<p>子组件传值父组件：通过$emit自定义事件传值</p>
-</blockquote>
-<p><strong>一、props：</strong></p>
-<p><strong>1.静态传值：</strong></p>
-<blockquote>
-<p>父组件中给子组件标签设置一个自定义属性并赋值</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;son message=<span class="string">&quot;hello&quot;</span>&gt;&lt;/son&gt;</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2020/06/24/Vue%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/06/24/Vue%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue的生命周期" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/06/24/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" target="_blank">Vue的生命周期</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/06/24/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="archive-article-date">
-        <time datetime="2020-06-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><strong>Vue的生命周期是什么？</strong></p>
-<blockquote>
-<p>vue每个组件都是独立的，每个组件都有属于它的生命周期，从一个组件创建、挂载、更新、销毁的过程，这些统称为vue的生命周期。</p>
-<p>同时在这个过程中也会运行一些叫做<strong>生命周期钩子</strong>的函数，废话不多说看图</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2020/06/24/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/06/24/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-let、const、var的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_blank">let、const、var的区别</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/" class="archive-article-date">
-        <time datetime="2020-06-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-22</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="什么时候提出的？"><a href="#什么时候提出的？" class="headerlink" title="什么时候提出的？"></a>什么时候提出的？</h5><p>var是ES5中提出的，let、const是ES6中提出的</p>
-<p><strong>是否存在变量提升？</strong></p>
-<blockquote>
-<p>var声明的变量存在变量提升(将变量提升到当前作用域的顶部)，即变量可以在声明之前调用，值为undefined。</p>
-<p>let和const不存在变量提升。即它们所声明的变量一定要在声明后使用，否则报ReferenceError错</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/06/22/let%E3%80%81const%E3%80%81var%E7%9A%84%E5%8C%BA%E5%88%AB/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Vue+Element实现动态生成新表单加校验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/" target="_blank">Vue+Element实现动态生成新表单加校验</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/" class="archive-article-date">
-        <time datetime="2020-05-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Vue-Element实现动态生成新表单加校验"><a href="#Vue-Element实现动态生成新表单加校验" class="headerlink" title="Vue+Element实现动态生成新表单加校验"></a>Vue+Element实现动态生成新表单加校验</h2><p>效果图：<img src="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/1.gif"></p>
-<p>官方文档中有写用v-for实现新增表单，但是只是单表单的新增，现在是多表单的新增。可以实现的方法是在data定义一个数组，点击新增就会在数组中push一条数据，在使用v-for进行遍历，可以达到新增的效果</p>
-<p>代码如下：</p>
-    
-    <a class="article-more-a" href="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Activiti数据库表结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/" target="_blank">Activiti数据库表结构</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/" class="archive-article-date">
-        <time datetime="2020-05-06T13:06:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="Activiti数据库表结构"><a href="#Activiti数据库表结构" class="headerlink" title="Activiti数据库表结构"></a>Activiti数据库表结构</h1><p>简单介绍一下Activiti5-6的数据表结构</p>
-<p>Activiti工作流中总共包含了23张表（现在是25张表，增加了 ACT_EVT_LOG 和 ACT_PROCDEF_INFO）</p>
-<h3 id="表名规则"><a href="#表名规则" class="headerlink" title="表名规则"></a>表名规则</h3><p>Activiti使用到的表都是Act_开头的，表名的第二部分用两个字母表明表的用途。</p>
-<ul>
-<li>ACT_GE_(GE) 表示general全局通用数据设置，各种情况都使用到的数据</li>
-<li>ACT_HI_(HI) 表示history历史数据表，包含着流程执行的历史数据，比如结束的流程实例，变量，任务等等</li>
-<li>ACT_ID_(ID) 表示identity组织机构，用户记录，流程中使用到的用户和组。这些表包含标识的信息，用户组等</li>
-<li>ACT_RE_(RE) 表示repository存储，包含着的是静态信息,如，流程定义，流程资源等</li>
-<li>ACT_RU_(RU) 表示runtime运行时，运行时的流程变量，用户任务，变量，职责（job）等运行时的数据.    Activiti 只存储实例执行期间的运行时数据，当流程实例结束时，将删除这些记录。这就保证了这些运行时的表小且快.</li>
-</ul>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Activiti</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-SpringBoot常见面试题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/03/25/SpringBoot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" target="_blank">SpringBoot</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/03/25/SpringBoot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-        <time datetime="2020-03-25T01:34:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-25</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="SpringBOOT"><a href="#SpringBOOT" class="headerlink" title="SpringBOOT"></a><center>SpringBOOT</center></h2><p><strong>什么是SpringBOOT？</strong></p>
-<p>SpringBOOT是Spring开源组织下的项目，是Spring一站式解决方案，主要是简化了Spring的难度，简化了各种繁重的配置，提供了各种启动器。开发者能容易上手。</p>
-<p><strong>为什么使用SpringBOOT</strong></p>
-<p>Spring BOOT的优点非常多，比如：</p>
-<ul>
-<li><p>独立运行</p>
-</li>
-<li><p>简化配置</p>
-</li>
-<li><p>自动配置</p>
-</li>
-<li><p>无需配置XML</p>
-</li>
-<li><p>上手容易</p>
-</li>
-</ul>
-<p>这么多优点集一身，还有什么理由不使用呢</p>
-    
-    <a class="article-more-a" href="/2020/03/25/SpringBoot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/03/25/SpringBoot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Centos7安装Docker并配置阿里镜像源" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/" target="_blank">Centos7安装Docker并配置阿里镜像源</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/" class="archive-article-date">
-        <time datetime="2020-03-24T14:49:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Centos7安装Docker并配置阿里镜像源"><a href="#Centos7安装Docker并配置阿里镜像源" class="headerlink" title="Centos7安装Docker并配置阿里镜像源"></a><center>Centos7安装Docker并配置阿里镜像源</center></h2><h2 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h2><blockquote>
-<p>卸载旧版本</p>
-</blockquote>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-selinux \</span><br><span class="line">                  docker-engine-selinux \</span><br><span class="line">                  docker-engine</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Docker//" class="article-tag-list-link color2">Docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -1300,8 +515,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
