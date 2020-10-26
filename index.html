@@ -47,6 +47,22 @@
   
   
 
+<script>
+  (function () {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+
+</script>
+
+
 
   
 
@@ -195,7 +211,7 @@
 
 
   
-    <article id="post-Java集合和部分List，Map实现原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Json串与实体类和JSONObject之间的相互转换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -203,7 +219,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" target="_blank">Java集合和部分List，Map实现原理</a>
+	  <a class="article-title" href="/2020/10/23/Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" target="_blank">Json串与实体类和JSONObject之间的相互转换</a>
   
     </h1>
   
@@ -211,116 +227,7 @@
 
   
   
-<a href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" class="archive-article-date">
-        <time datetime="2020-10-23T08:27:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-23</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="Java集合和部分List，Map实现原理"><a href="#Java集合和部分List，Map实现原理" class="headerlink" title=" Java集合和部分List，Map实现原理"></a><center> Java集合和部分List，Map实现原理</center></h3><blockquote>
-<p>List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口</p>
-<p>List下有ArrayList，Vector，LinkedList</p>
-<p>Map下有Hsahtable，LinkedMap，HashMap，TreeMap</p>
-<p>Set下有HashSet，LinkedSet，TreeSet</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    <div class="article-pop-out tagcloud">
-      <i class="icon-tuding"></i>
-      <a class="article-tag-list-link color3">置顶</a>
-    </div>
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/10/23/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020-10-23-Json串与实体类和JSONObject之间的相互转换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/10/23/2020-10-23-Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" target="_blank">Json串与实体类和JSONObject之间的相互转换</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/10/23/2020-10-23-Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
+<a href="/2020/10/23/Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
         <time datetime="2020-10-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-23</time>
 </a>
 
@@ -345,11 +252,9 @@
 <blockquote>
 <p>实体类 bean = JSON.parseObject(json,实体类.class);</p>
 </blockquote>
-<p><strong>4.JSON串转带泛型的List的集合</strong></p>
-<blockquote>
-<p>List&lt;实体类或者其他泛型&gt; list =  JSON.parseObject(json,new TypeReference&lt;List&lt;实体类或其他泛型&gt;&gt;(){});</p>
-</blockquote>
-
+    
+    <a class="article-more-a" href="/2020/10/23/Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/#more">more >></a>
+    
     
 
     
@@ -386,7 +291,111 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2020/10/23/2020-10-23-Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/">展开全文 >></a>
+      <a class="article-more-a" href="/2020/10/23/Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java集合和部分List，Map实现原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" target="_blank">Java集合和部分List，Map实现原理</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" class="archive-article-date">
+        <time datetime="2020-10-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-20</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="Java集合和部分List，Map实现原理"><a href="#Java集合和部分List，Map实现原理" class="headerlink" title=" Java集合和部分List，Map实现原理"></a><center> Java集合和部分List，Map实现原理</center></h3><blockquote>
+<p>List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口</p>
+<p>List下有ArrayList，Vector，LinkedList</p>
+<p>Map下有Hsahtable，LinkedMap，HashMap，TreeMap</p>
+<p>Set下有HashSet，LinkedSet，TreeSet</p>
+</blockquote>
+    
+    <a class="article-more-a" href="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/">展开全文 >></a>
     </p>
     
 
@@ -1045,112 +1054,6 @@
 
 
   
-    <article id="post-Activiti数据库表结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/" target="_blank">Activiti数据库表结构</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/" class="archive-article-date">
-        <time datetime="2020-05-06T13:06:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="Activiti数据库表结构"><a href="#Activiti数据库表结构" class="headerlink" title="Activiti数据库表结构"></a>Activiti数据库表结构</h1><p>简单介绍一下Activiti5-6的数据表结构</p>
-<p>Activiti工作流中总共包含了23张表（现在是25张表，增加了 ACT_EVT_LOG 和 ACT_PROCDEF_INFO）</p>
-<h3 id="表名规则"><a href="#表名规则" class="headerlink" title="表名规则"></a>表名规则</h3><p>Activiti使用到的表都是Act_开头的，表名的第二部分用两个字母表明表的用途。</p>
-<ul>
-<li>ACT_GE_(GE) 表示general全局通用数据设置，各种情况都使用到的数据</li>
-<li>ACT_HI_(HI) 表示history历史数据表，包含着流程执行的历史数据，比如结束的流程实例，变量，任务等等</li>
-<li>ACT_ID_(ID) 表示identity组织机构，用户记录，流程中使用到的用户和组。这些表包含标识的信息，用户组等</li>
-<li>ACT_RE_(RE) 表示repository存储，包含着的是静态信息,如，流程定义，流程资源等</li>
-<li>ACT_RU_(RU) 表示runtime运行时，运行时的流程变量，用户任务，变量，职责（job）等运行时的数据.    Activiti 只存储实例执行期间的运行时数据，当流程实例结束时，将删除这些记录。这就保证了这些运行时的表小且快.</li>
-</ul>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Activiti</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-SpringBoot常见面试题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1237,6 +1140,108 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2020/03/25/SpringBoot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Centos7安装Docker并配置阿里镜像源" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/" target="_blank">Centos7安装Docker并配置阿里镜像源</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/" class="archive-article-date">
+        <time datetime="2020-03-24T14:49:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="Centos7安装Docker并配置阿里镜像源"><a href="#Centos7安装Docker并配置阿里镜像源" class="headerlink" title="Centos7安装Docker并配置阿里镜像源"></a><center>Centos7安装Docker并配置阿里镜像源</center></h2><h2 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h2><blockquote>
+<p>卸载旧版本</p>
+</blockquote>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-selinux \</span><br><span class="line">                  docker-engine-selinux \</span><br><span class="line">                  docker-engine</span><br></pre></td></tr></table></figure>
+    
+    <a class="article-more-a" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Docker//" class="article-tag-list-link color2">Docker</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/24/Centos7%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/">展开全文 >></a>
     </p>
     
 
@@ -1411,15 +1416,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Activiti</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ES6</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
             
             <div class="clearfix"></div>

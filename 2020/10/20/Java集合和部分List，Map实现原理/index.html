@@ -6,22 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dupeng98.gitee">
-  <title>Activiti数据库表结构 | Hexo</title>
+  <title>Java集合和部分List，Map实现原理 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Activiti数据库表结构简单介绍一下Activiti5-6的数据表结构 Activiti工作流中总共包含了23张表（现在是25张表，增加了 ACT_EVT_LOG 和 ACT_PROCDEF_INFO） 表名规则Activiti使用到的表都是Act_开头的，表名的第二部分用两个字母表明表的用途。  ACT_GE_(GE) 表示general全局通用数据设置，各种情况都使用到的数据 ACT_HI">
+  <meta name="description" content="Java集合和部分List，Map实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Activiti数据库表结构">
-<meta property="og:url" content="https://dupeng98.gitee/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/index.html">
+<meta property="og:title" content="Java集合和部分List，Map实现原理">
+<meta property="og:url" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Activiti数据库表结构简单介绍一下Activiti5-6的数据表结构 Activiti工作流中总共包含了23张表（现在是25张表，增加了 ACT_EVT_LOG 和 ACT_PROCDEF_INFO） 表名规则Activiti使用到的表都是Act_开头的，表名的第二部分用两个字母表明表的用途。  ACT_GE_(GE) 表示general全局通用数据设置，各种情况都使用到的数据 ACT_HI">
+<meta property="og:description" content="Java集合和部分List，Map实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-06T13:06:01.000Z">
-<meta property="article:modified_time" content="2020-05-25T03:10:26.221Z">
+<meta property="og:image" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
+<meta property="article:published_time" content="2020-10-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-10-26T01:35:34.952Z">
 <meta property="article:author" content="Du Peng">
-<meta property="article:tag" content="Activiti">
+<meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -47,6 +49,22 @@
  	  <script src="/lib/clickLove.js"></script>
   
   
+
+<script>
+  (function () {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+
+</script>
+
 
 
   
@@ -186,14 +204,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Activiti数据库表结构" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java集合和部分List，Map实现原理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Activiti数据库表结构
+      Java集合和部分List，Map实现原理
     </h1>
   
 
@@ -205,8 +223,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/" class="archive-article-date">
-        <time datetime="2020-05-06T13:06:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
+<a href="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" class="archive-article-date">
+        <time datetime="2020-10-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-20</time>
 </a>
 
   
@@ -219,7 +237,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">280字</span>
+      <span class="post-count">971字</span>
     </span>
   </span>
 
@@ -228,7 +246,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">3分</span>
     </span>
   </span>
 </div>
@@ -239,17 +257,116 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="Activiti数据库表结构"><a href="#Activiti数据库表结构" class="headerlink" title="Activiti数据库表结构"></a>Activiti数据库表结构</h1><p>简单介绍一下Activiti5-6的数据表结构</p>
-<p>Activiti工作流中总共包含了23张表（现在是25张表，增加了 ACT_EVT_LOG 和 ACT_PROCDEF_INFO）</p>
-<h3 id="表名规则"><a href="#表名规则" class="headerlink" title="表名规则"></a>表名规则</h3><p>Activiti使用到的表都是Act_开头的，表名的第二部分用两个字母表明表的用途。</p>
-<ul>
-<li>ACT_GE_(GE) 表示general全局通用数据设置，各种情况都使用到的数据</li>
-<li>ACT_HI_(HI) 表示history历史数据表，包含着流程执行的历史数据，比如结束的流程实例，变量，任务等等</li>
-<li>ACT_ID_(ID) 表示identity组织机构，用户记录，流程中使用到的用户和组。这些表包含标识的信息，用户组等</li>
-<li>ACT_RE_(RE) 表示repository存储，包含着的是静态信息,如，流程定义，流程资源等</li>
-<li>ACT_RU_(RU) 表示runtime运行时，运行时的流程变量，用户任务，变量，职责（job）等运行时的数据.    Activiti 只存储实例执行期间的运行时数据，当流程实例结束时，将删除这些记录。这就保证了这些运行时的表小且快.</li>
-</ul>
+    <h3 id="Java集合和部分List，Map实现原理"><a href="#Java集合和部分List，Map实现原理" class="headerlink" title=" Java集合和部分List，Map实现原理"></a><center> Java集合和部分List，Map实现原理</center></h3><blockquote>
+<p>List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口</p>
+<p>List下有ArrayList，Vector，LinkedList</p>
+<p>Map下有Hsahtable，LinkedMap，HashMap，TreeMap</p>
+<p>Set下有HashSet，LinkedSet，TreeSet</p>
+</blockquote>
+<a id="more"></a>
 
+
+
+<p><img src="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg"></p>
+<h3 id="List-是有序的，可重复的"><a href="#List-是有序的，可重复的" class="headerlink" title="List      是有序的，可重复的"></a>List      是有序的，可重复的</h3><ul>
+<li><p><strong>ArrayList</strong></p>
+<blockquote>
+<p>优点：底层是数组，查询快，增删慢</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程不安全，效率快</p>
+</blockquote>
+<p><strong>底层源码分析：</strong></p>
+<p><strong>JDK7的情况下：</strong></p>
+<blockquote>
+<p>new ArrayList(); 底层创建了一个长度为10的数组，如果一直添加，导致数组的容量不够，就会扩容，扩容为原来的1.5倍，同时将原有的数组复制到新的数组中</p>
+</blockquote>
+<blockquote>
+<p>结论：建议使用带参的构造器 new ArrayList(50);，一开始就创建了指定的长度，避免了中间扩容</p>
+</blockquote>
+<p><strong><em>JDK8</em>中的变化</strong></p>
+<blockquote>
+<p>在new ArrayList的时候并没有创建长度为10的数组，只创建了一个空的数组</p>
+<p>在第一次add()的时候，才创建了长度为10的数组</p>
+<p>后续和JDK7 中的一样</p>
+</blockquote>
+<blockquote>
+<p>小结：ArrayList在jdk中类似单例的饿汗式。在JDK8中就类似单例的懒汉式，延迟了加载</p>
+</blockquote>
+</li>
+<li><p><strong>Vector 最古老的一个数组，JDK1中就有</strong></p>
+<blockquote>
+<p>优点：底层也是使用数组实现的，查询快，增删慢</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程安全但是效率低</p>
+</blockquote>
+</li>
+<li><p><strong>LinkedList</strong></p>
+<blockquote>
+<p>优点：底层是双向链表结构实现的，查询慢，对于频繁的增删快</p>
+</blockquote>
+<blockquote>
+<p>缺点：线程不安全，但是效率高</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Set-是无序的，是唯一的-使用最少的"><a href="#Set-是无序的，是唯一的-使用最少的" class="headerlink" title="Set    是无序的，是唯一的(使用最少的)"></a>Set    是无序的，是唯一的(使用最少的)</h3><ul>
+<li><p><strong>HashSet(无序的，唯一的)</strong></p>
+<blockquote>
+<p>底层结构是哈希表</p>
+</blockquote>
+<blockquote>
+<p>怎么保证元素的唯一性？ 依赖两个方法 HashCode()和equls</p>
+</blockquote>
+</li>
+<li><p><strong>LInkedHashSet（有序的，唯一的）</strong></p>
+<blockquote>
+<p>底层结构是链表和哈希表</p>
+<p>链表保证元素的唯一性，哈希保证元素的唯一</p>
+</blockquote>
+</li>
+<li><p><strong>TreeSet（唯一的，有序的）</strong></p>
+<blockquote>
+<p>底层是红黑树（暂时对红黑树的认知很少）</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="Map-存储-k-v对的数据，底层是数组加链表进行存储的"><a href="#Map-存储-k-v对的数据，底层是数组加链表进行存储的" class="headerlink" title="Map     存储 k-v对的数据，底层是数组加链表进行存储的"></a>Map     存储 k-v对的数据，底层是数组加链表进行存储的</h2><blockquote>
+<p>HashMap是map的主要实现类，线程是不安全的，但是效率高，但是不能存储null值的k和v</p>
+</blockquote>
+<blockquote>
+<p>Hashtable是古老的实现类，线程是安全的，但是效率低，可以存储null值的k和v</p>
+</blockquote>
+<p><strong><em>HashMap</em>的底层原理：(高频面试题)</strong></p>
+<p><strong>JDK7中：</strong></p>
+<blockquote>
+<p>HashMap map = new HashMap的时候，底层就会创建一个长度为16的数组</p>
+</blockquote>
+<p><strong>在map.put(k1,v1)时</strong></p>
+<blockquote>
+<p>情况一：*首先先计算k1所在类Hashcode()方法计算哈希值，就会得到k1-v1的存放位置，如果这个位置上没有数据，k1-v1就会添加成功，</p>
+<p>如果在这个位置上有数据，就意味着（在这个位置上有一个或者多个数据，是以链表的方式存在的）</p>
+</blockquote>
+<blockquote>
+<p>情况二：*如果k1的哈希值和其余的数据的哈希值不一样，此时k1-v1就会添加成功</p>
+</blockquote>
+<blockquote>
+<p>情况三：*如果k1的哈希值和其余的数据的哈希值一样，此时就会调用equls方法，如果返回的是false,则添加成功</p>
+<p>如果返回的是true，则用k1的vule值替换掉原来的值</p>
+</blockquote>
+<p>关于扩容问题：在不断的添加过程中，默认的扩容方式是将原来的容量扩大2倍，并将原来的值复制过来。</p>
+<p><strong>JDK7和JDK8中的不同：</strong></p>
+<blockquote>
+<p>JDK8中，在new HashMap()的时候并没有创建一个长度为16的数组，而是在进行第一次put的时候才创建了一个长度为16的数组。</p>
+<p>在JDK8中底层是使用  数组加链表加红黑树进行存储的</p>
+</blockquote>
+<blockquote>
+<p>什么时候用到红黑树呢？当在数组的一个索引位置上的以链表的形式存在的数据超过8个了，而且当数组的长度超过64了，此时索引位置上的所有数据改为红黑树存储。</p>
+</blockquote>
+<center></center>
+
+<h3 id="有不对的地方欢迎在评论处指正"><a href="#有不对的地方欢迎在评论处指正" class="headerlink" title="有不对的地方欢迎在评论处指正"></a><center>有不对的地方欢迎在评论处指正</center></h3>
     
 
     
@@ -295,7 +412,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://dupeng98.gitee/2020/05/06/Activiti数据库表结构/" title="Activiti数据库表结构" target="_blank">https://dupeng98.gitee/2020/05/06/Activiti数据库表结构/</a>
+          <a href="https://dupeng98.gitee/2020/10/20/Java集合和部分List，Map实现原理/" title="Java集合和部分List，Map实现原理" target="_blank">https://dupeng98.gitee/2020/10/20/Java集合和部分List，Map实现原理/</a>
         </li>
         
         <li>
@@ -317,7 +434,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Activiti</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
         		</li>
       		
 		</ul>
@@ -384,7 +501,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee/2020/05/06/Activiti%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -399,18 +516,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/05/24/Vue+Element%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E6%96%B0%E8%A1%A8%E5%8D%95%E5%8A%A0%E6%A0%A1%E9%AA%8C/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/10/23/Json%E4%B8%B2%E4%B8%8E%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%92%8CJSONObject%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Vue+Element实现动态生成新表单加校验
+          Json串与实体类和JSONObject之间的相互转换
         
       </div>
     </a>
   
   
-    <a href="/2020/03/25/SpringBoot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">SpringBoot</div>
+    <a href="/2020/07/13/Docker%E5%AE%89%E8%A3%85Mysql%20&%20Redis/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Docker安装Mysql &amp; Redis</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -448,9 +565,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "Activiti数据库表结构" -->
+  <!-- id: "Java集合和部分List，Map实现原理" -->
   var giteement = new Giteement({
-    id: '20200506210601',
+    id: '20201020000000',
     owner: 'dupeng98',
     repo: 'dupeng98',
     backcall_uri: 'https://dupeng98.gitee.io/',
@@ -608,15 +725,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Activiti</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ES6</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
             
             <div class="clearfix"></div>
