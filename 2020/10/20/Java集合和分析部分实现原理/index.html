@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dupeng98.gitee">
-  <title>Java集合和部分List，Map实现原理 | Hexo</title>
+  <title>Java集合和分析部分实现原理 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Java集合和部分List，Map实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
+  <meta name="description" content="Java集合和分析部分实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java集合和部分List，Map实现原理">
-<meta property="og:url" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/index.html">
+<meta property="og:title" content="Java集合和分析部分实现原理">
+<meta property="og:url" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E5%88%86%E6%9E%90%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Java集合和部分List，Map实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
+<meta property="og:description" content="Java集合和分析部分实现原理 List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口 List下有ArrayList，Vector，LinkedList Map下有Hsahtable，LinkedMap，HashMap，TreeMap Set下有HashSet，LinkedSet，TreeSet">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
+<meta property="og:image" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E5%88%86%E6%9E%90%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
 <meta property="article:published_time" content="2020-10-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-26T01:35:34.952Z">
+<meta property="article:modified_time" content="2020-10-26T02:24:49.353Z">
 <meta property="article:author" content="Du Peng">
 <meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
+<meta name="twitter:image" content="https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E5%88%86%E6%9E%90%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -204,14 +204,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Java集合和部分List，Map实现原理" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java集合和分析部分实现原理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Java集合和部分List，Map实现原理
+      Java集合和分析部分实现原理
     </h1>
   
 
@@ -223,7 +223,7 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" class="archive-article-date">
+<a href="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E5%88%86%E6%9E%90%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" class="archive-article-date">
         <time datetime="2020-10-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-20</time>
 </a>
 
@@ -237,7 +237,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">971字</span>
+      <span class="post-count">999字</span>
     </span>
   </span>
 
@@ -257,23 +257,19 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="Java集合和部分List，Map实现原理"><a href="#Java集合和部分List，Map实现原理" class="headerlink" title=" Java集合和部分List，Map实现原理"></a><center> Java集合和部分List，Map实现原理</center></h3><blockquote>
+    <h3 id="Java集合和分析部分实现原理"><a href="#Java集合和分析部分实现原理" class="headerlink" title=" Java集合和分析部分实现原理"></a><center> Java集合和分析部分实现原理</center></h3><blockquote>
 <p>List，Set，Map都是集合接口，前两者继承于Collection，Map是独立接口</p>
 <p>List下有ArrayList，Vector，LinkedList</p>
 <p>Map下有Hsahtable，LinkedMap，HashMap，TreeMap</p>
 <p>Set下有HashSet，LinkedSet，TreeSet</p>
 </blockquote>
+<p><img src="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E5%88%86%E6%9E%90%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg"></p>
 <a id="more"></a>
 
-
-
-<p><img src="/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%9B%BE.jpg"></p>
 <h3 id="List-是有序的，可重复的"><a href="#List-是有序的，可重复的" class="headerlink" title="List      是有序的，可重复的"></a>List      是有序的，可重复的</h3><ul>
 <li><p><strong>ArrayList</strong></p>
 <blockquote>
 <p>优点：底层是数组，查询快，增删慢</p>
-</blockquote>
-<blockquote>
 <p>缺点：线程不安全，效率快</p>
 </blockquote>
 <p><strong>底层源码分析：</strong></p>
@@ -297,16 +293,12 @@
 <li><p><strong>Vector 最古老的一个数组，JDK1中就有</strong></p>
 <blockquote>
 <p>优点：底层也是使用数组实现的，查询快，增删慢</p>
-</blockquote>
-<blockquote>
 <p>缺点：线程安全但是效率低</p>
 </blockquote>
 </li>
 <li><p><strong>LinkedList</strong></p>
 <blockquote>
 <p>优点：底层是双向链表结构实现的，查询慢，对于频繁的增删快</p>
-</blockquote>
-<blockquote>
 <p>缺点：线程不安全，但是效率高</p>
 </blockquote>
 </li>
@@ -339,29 +331,29 @@
 <p>Hashtable是古老的实现类，线程是安全的，但是效率低，可以存储null值的k和v</p>
 </blockquote>
 <p><strong><em>HashMap</em>的底层原理：(高频面试题)</strong></p>
-<p><strong>JDK7中：</strong></p>
+<p><strong>JDK7中(数组加链表)：</strong></p>
 <blockquote>
 <p>HashMap map = new HashMap的时候，底层就会创建一个长度为16的数组</p>
 </blockquote>
 <p><strong>在map.put(k1,v1)时</strong></p>
 <blockquote>
-<p>情况一：*首先先计算k1所在类Hashcode()方法计算哈希值，就会得到k1-v1的存放位置，如果这个位置上没有数据，k1-v1就会添加成功，</p>
-<p>如果在这个位置上有数据，就意味着（在这个位置上有一个或者多个数据，是以链表的方式存在的）</p>
+<p>情况一：首先先计算k1所在类Hashcode()方法计算哈希码，得到k1-v1的存放位置</p>
+<p>如果这个位置上没有数据，k1-v1就会添加成功</p>
+<p>如果在这个位置上有数据，就意味着在这个位置上有一个或者多个数据，就会使用链表的方式进行存储(见情况二和情况三)</p>
 </blockquote>
 <blockquote>
-<p>情况二：*如果k1的哈希值和其余的数据的哈希值不一样，此时k1-v1就会添加成功</p>
+<p>情况二：在这个位置上 如果k1的哈希值和其余的数据的哈希值不一样，此时k1-v1就会添加成功</p>
 </blockquote>
 <blockquote>
-<p>情况三：*如果k1的哈希值和其余的数据的哈希值一样，此时就会调用equls方法，如果返回的是false,则添加成功</p>
-<p>如果返回的是true，则用k1的vule值替换掉原来的值</p>
+<p>情况三：如果k1的哈希值和其余的数据的哈希值一样，此时就会调用equls方法，如果返回的是false,则添加成功，如果返回的是true，则用k1的vule值替换掉原来的值</p>
 </blockquote>
 <p>关于扩容问题：在不断的添加过程中，默认的扩容方式是将原来的容量扩大2倍，并将原来的值复制过来。</p>
-<p><strong>JDK7和JDK8中的不同：</strong></p>
+<p><strong>JDK7和JDK8（数组+链表+红黑树）中的不同：</strong></p>
 <blockquote>
 <p>JDK8中，在new HashMap()的时候并没有创建一个长度为16的数组，而是在进行第一次put的时候才创建了一个长度为16的数组。</p>
-<p>在JDK8中底层是使用  数组加链表加红黑树进行存储的</p>
 </blockquote>
 <blockquote>
+<p>在JDK8中底层是使用  数组加链表加红黑树进行存储的</p>
 <p>什么时候用到红黑树呢？当在数组的一个索引位置上的以链表的形式存在的数据超过8个了，而且当数组的长度超过64了，此时索引位置上的所有数据改为红黑树存储。</p>
 </blockquote>
 <center></center>
@@ -412,7 +404,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://dupeng98.gitee/2020/10/20/Java集合和部分List，Map实现原理/" title="Java集合和部分List，Map实现原理" target="_blank">https://dupeng98.gitee/2020/10/20/Java集合和部分List，Map实现原理/</a>
+          <a href="https://dupeng98.gitee/2020/10/20/Java集合和分析部分实现原理/" title="Java集合和分析部分实现原理" target="_blank">https://dupeng98.gitee/2020/10/20/Java集合和分析部分实现原理/</a>
         </li>
         
         <li>
@@ -501,7 +493,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E9%83%A8%E5%88%86List%EF%BC%8CMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dupeng98.gitee/2020/10/20/Java%E9%9B%86%E5%90%88%E5%92%8C%E5%88%86%E6%9E%90%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -565,7 +557,7 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "Java集合和部分List，Map实现原理" -->
+  <!-- id: "Java集合和分析部分实现原理" -->
   var giteement = new Giteement({
     id: '20201020000000',
     owner: 'dupeng98',
